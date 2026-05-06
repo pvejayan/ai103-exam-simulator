@@ -25,6 +25,7 @@ docker stop ai103-exam-sim
 
 - Full 300-question simulation
 - Quick 50-question mode
+- Code practice mode for snippet-based questions
 - Section practice mode
 - Single-choice and multiple-response questions
 - Shuffled questions and shuffled answers

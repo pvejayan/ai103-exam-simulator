@@ -3,85 +3,85 @@
     "number": 1,
     "section": "Plan and manage an Azure AI solution",
     "type": "Single answer",
-    "topic": "Model choice",
-    "stem": "A team needs low-latency classification of support tickets into 12 categories. The labels are stable and the input is short. Which model choice is most appropriate first?",
-    "code": null,
+    "topic": "Keyless authentication",
+    "stem": "In the code shown, which value is being used as the credential for the OpenAI client?",
+    "code": "from openai import OpenAI\nfrom azure.identity import DefaultAzureCredential, get_bearer_token_provider\n\ntoken_provider = get_bearer_token_provider(\n    DefaultAzureCredential(),\n    \"https://ai.azure.com/.default\"\n)\n\nclient = OpenAI(\n    base_url=\"https://contoso.openai.azure.com/openai/v1/\",\n    api_key=token_provider,\n)",
     "options": [
-      "A small language model or focused classifier model deployed in Foundry",
-      "The largest available multimodal model",
-      "A video generation model",
-      "A custom speech model"
+      "A Microsoft Entra token provider created from DefaultAzureCredential",
+      "A hardcoded Azure OpenAI key",
+      "A Speech service endpoint ID",
+      "An Azure AI Search query key"
     ],
     "answer": "A",
-    "explanation": "Small/focused models are often sufficient for classification and reduce cost and latency.",
+    "explanation": "The get_bearer_token_provider call wraps DefaultAzureCredential and supplies Microsoft Entra tokens for keyless authentication.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {
     "number": 2,
     "section": "Plan and manage an Azure AI solution",
     "type": "Single answer",
-    "topic": "Foundry service choice",
-    "stem": "You must build an app that answers employee questions from private policy documents with citations. What should be the primary architecture pattern?",
-    "code": null,
+    "topic": "Reasoning model configuration",
+    "stem": "Which reasoning effort value is configured in this request?",
+    "code": "response = client.chat.completions.create(\n    model=\"gpt-5-mini\",\n    messages=[\n        {\"role\": \"developer\", \"content\": \"You are a helpful assistant.\"},\n        {\"role\": \"user\", \"content\": \"Create an implementation checklist.\"},\n    ],\n    max_completion_tokens=5000,\n    reasoning_effort=\"medium\",\n)",
     "options": [
-      "RAG using a governed retrieval source such as Azure AI Search or Foundry knowledge sources",
-      "Direct model call without grounding",
-      "Image generation with reference media",
-      "Text-to-speech batch synthesis"
+      "medium",
+      "low",
+      "high",
+      "The code does not configure reasoning effort"
     ],
     "answer": "A",
-    "explanation": "Private knowledge and citations require retrieval/grounding, not only a base model.",
+    "explanation": "The request explicitly sets reasoning_effort to medium.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {
     "number": 3,
     "section": "Plan and manage an Azure AI solution",
     "type": "Single answer",
-    "topic": "Retrieval method",
-    "stem": "Users search for product IDs and also ask conceptual questions. Which retrieval approach should you favor?",
-    "code": null,
+    "topic": "Azure AI Search credentials",
+    "stem": "What security weakness should you identify in this code for a production app?",
+    "code": "from azure.core.credentials import AzureKeyCredential\nfrom azure.search.documents import SearchClient\n\nsearch_client = SearchClient(\n    endpoint=\"https://contoso.search.windows.net\",\n    index_name=\"policies\",\n    credential=AzureKeyCredential(\"1234567890abcdef\")\n)",
     "options": [
-      "Hybrid search with keyword and vector retrieval, optionally semantic ranking",
-      "Vector-only search for all queries",
-      "Keyword-only search for all queries",
-      "Text-to-speech with SSML"
+      "It embeds a query key directly in the application code",
+      "It uses too many selected fields",
+      "It uses a semantic configuration",
+      "It uses managed identity"
     ],
     "answer": "A",
-    "explanation": "Hybrid retrieval handles exact identifiers and semantic similarity together.",
+    "explanation": "Keys should not be hardcoded in production code. Prefer managed identity/RBAC where supported or secure secret storage.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {
     "number": 4,
     "section": "Plan and manage an Azure AI solution",
     "type": "Single answer",
-    "topic": "Agent memory",
-    "stem": "An agent should remember a user preference across sessions but still answer from governed documents. What is the correct design?",
-    "code": null,
+    "topic": "Search result shaping",
+    "stem": "What is the maximum number of documents this query asks Azure AI Search to return?",
+    "code": "results = search_client.search(\n    search_text=\"historic hotel walk to restaurants and shopping\",\n    vector_queries=[vector_query],\n    select=[\"HotelId\", \"HotelName\", \"Description\", \"Category\", \"Tags\"],\n    top=5,\n    include_total_count=True\n)",
     "options": [
-      "Store preference in long-term memory and retrieve factual answers from governed knowledge sources",
-      "Store all source documents in memory",
-      "Disable retrieval and rely on conversation history",
-      "Use image captions for user preferences"
+      "5",
+      "7",
+      "10",
+      "All matching documents"
     ],
     "answer": "A",
-    "explanation": "Memory and retrieval serve different purposes.",
+    "explanation": "The top parameter limits the returned results to five documents.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {
     "number": 5,
     "section": "Plan and manage an Azure AI solution",
     "type": "Single answer",
-    "topic": "Deployment option",
-    "stem": "A production workload needs predictable throughput, cost control, and model version pinning. What deployment option best matches this requirement?",
-    "code": null,
+    "topic": "Environment configuration",
+    "stem": "Which environment variable must be set for the model deployment name?",
+    "code": "agent = project_client.agents.create_agent(\n    model=os.environ[\"MODEL_DEPLOYMENT_NAME\"],\n    name=\"my-agent\",\n    instructions=\"You are a helpful agent\",\n    tools=code_interpreter.definitions,\n    tool_resources=code_interpreter.resources,\n)",
     "options": [
-      "Provisioned deployment",
-      "Standard experimental deployment",
-      "Unmanaged local script only",
-      "Trial video indexer account"
+      "MODEL_DEPLOYMENT_NAME",
+      "PROJECT_ENDPOINT",
+      "AZURE_SEARCH_ENDPOINT",
+      "SPEECH_REGION"
     ],
     "answer": "A",
-    "explanation": "Provisioned deployment is preferred for predictable production behavior.",
+    "explanation": "The model argument is read from os.environ['MODEL_DEPLOYMENT_NAME'].",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {
@@ -1277,18 +1277,18 @@
   {
     "number": 76,
     "section": "Implement generative AI and agentic solutions",
-    "type": "Multiple response (2 correct)",
-    "topic": "RAG evaluation",
-    "stem": "Which two evaluators are most relevant when a RAG answer contains fabricated claims and irrelevant context?",
-    "code": null,
+    "type": "Single answer",
+    "topic": "Hybrid search code",
+    "stem": "What makes this Azure AI Search query a hybrid query?",
+    "code": "from azure.search.documents.models import VectorizedQuery\n\nvector_query = VectorizedQuery(\n    vector=query_vector,\n    k_nearest_neighbors=10,\n    fields=\"DescriptionVector\",\n    exhaustive=True\n)\n\nresults = client.search(\n    search_text=\"historic hotel walk to restaurants and shopping\",\n    vector_queries=[vector_query],\n    select=[\"HotelName\", \"Description\", \"Address/City\"],\n    top=10\n)",
     "options": [
-      "Groundedness",
-      "Retrieval",
-      "Text-to-speech",
-      "Image crop"
+      "It sends both search_text and vector_queries",
+      "It sets top to 10",
+      "It selects Address/City",
+      "It uses exhaustive=True only"
     ],
-    "answer": "A, B",
-    "explanation": "Groundedness checks support from context; retrieval checks whether the retrieved chunks are relevant.",
+    "answer": "A",
+    "explanation": "Hybrid search combines keyword/full-text input with vector retrieval in the same request.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {
@@ -1312,17 +1312,17 @@
     "number": 78,
     "section": "Implement generative AI and agentic solutions",
     "type": "Single answer",
-    "topic": "Semantic ranking",
-    "stem": "A hybrid query needs semantic reranking for better natural language relevance. What should be added?",
-    "code": null,
+    "topic": "Vector field",
+    "stem": "Which index field is used for vector similarity in this query?",
+    "code": "vector_query = VectorizedQuery(\n    vector=query_vector,\n    k_nearest_neighbors=10,\n    fields=\"DescriptionVector\",\n    exhaustive=True\n)",
     "options": [
-      "query_type='semantic' and a semantic configuration name",
-      "A TTS voice name",
-      "A larger overlap only",
-      "A face detection model"
+      "DescriptionVector",
+      "HotelName",
+      "Address/City",
+      "Category"
     ],
     "answer": "A",
-    "explanation": "Semantic ranking requires semantic query type/configuration.",
+    "explanation": "The VectorizedQuery fields argument is set to DescriptionVector.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {
@@ -1346,136 +1346,136 @@
     "number": 80,
     "section": "Implement generative AI and agentic solutions",
     "type": "Single answer",
-    "topic": "Tool schema",
-    "stem": "An agent must call a refund API. What should the tool schema define?",
-    "code": null,
+    "topic": "Semantic hybrid query",
+    "stem": "Which parameter enables semantic ranking in this query?",
+    "code": "results = search_client.search(\n    search_text=\"historic hotel walk to restaurants and shopping\",\n    vector_queries=[vector_query],\n    select=[\"HotelId\", \"HotelName\", \"Category\", \"Description\"],\n    query_type=\"semantic\",\n    semantic_configuration_name=\"my-semantic-config\",\n    top=5,\n    include_total_count=True\n)",
     "options": [
-      "Function purpose, required parameters, parameter types, and expected output",
-      "Only the model temperature",
-      "Only the user interface color",
-      "Only the deployment region"
+      "query_type=\"semantic\"",
+      "include_total_count=True",
+      "top=5",
+      "select=[...]"
     ],
     "answer": "A",
-    "explanation": "A tool schema lets the agent know how to call the tool safely and correctly.",
+    "explanation": "Semantic ranking is requested by setting query_type to semantic with a semantic configuration.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {
     "number": 81,
     "section": "Implement generative AI and agentic solutions",
     "type": "Single answer",
-    "topic": "Agent memory",
-    "stem": "A customer-support agent needs continuity across sessions. Which capability should you consider?",
-    "code": null,
+    "topic": "Filtered vector query",
+    "stem": "When is the geo.distance filter applied in this query?",
+    "code": "results = search_client.search(\n    include_total_count=True,\n    top=5,\n    select=[\"HotelId\", \"HotelName\", \"Description\"],\n    filter=\"geo.distance(Location, geography'POINT(-77.03241 38.90166)') le 300\",\n    vector_filter_mode=\"postFilter\",\n    vector_queries=[vector_query]\n)",
     "options": [
-      "Long-term memory with minimal durable facts",
-      "Semantic captions",
-      "Provisioned throughput only",
-      "A fixed image mask"
+      "After vector search, because vector_filter_mode is postFilter",
+      "Before vector search, because top=5",
+      "During speech synthesis",
+      "Only after semantic reranking is disabled"
     ],
     "answer": "A",
-    "explanation": "Long-term memory supports cross-session continuity.",
+    "explanation": "The vector_filter_mode value is postFilter, so the filter is applied after vector retrieval.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {
     "number": 82,
     "section": "Implement generative AI and agentic solutions",
     "type": "Single answer",
-    "topic": "Sequential orchestration",
-    "stem": "A contract workflow must run template selection, clause drafting, compliance review, and risk scoring in that order. Which orchestration pattern fits?",
-    "code": null,
+    "topic": "Agent tool wiring",
+    "stem": "Which tool is enabled for this Foundry agent?",
+    "code": "from azure.ai.projects.models import CodeInterpreterTool, PromptAgentDefinition\n\nagent = project.agents.create_version(\n    agent_name=\"my-agent\",\n    definition=PromptAgentDefinition(\n        model=\"gpt-4.1\",\n        instructions=\"Use the Code Interpreter tool when asked to visualize numbers.\",\n        tools=[CodeInterpreterTool()],\n    ),\n)",
     "options": [
-      "Sequential orchestration",
-      "Concurrent orchestration",
-      "Image inpainting",
-      "Text-to-speech batch synthesis"
+      "Code Interpreter",
+      "Azure AI Search",
+      "Speech translation",
+      "Document Intelligence prebuilt invoice"
     ],
     "answer": "A",
-    "explanation": "Sequential orchestration fits ordered dependencies.",
+    "explanation": "The agent definition includes CodeInterpreterTool(), enabling code interpreter capabilities.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {
     "number": 83,
     "section": "Implement generative AI and agentic solutions",
     "type": "Single answer",
-    "topic": "Concurrent orchestration",
-    "stem": "Four independent analysts must evaluate the same document in parallel and aggregate findings. Which pattern fits?",
-    "code": null,
+    "topic": "Agent Search tool",
+    "stem": "Which two arguments connect the Azure AI Search tool to the agent?",
+    "code": "agent = project_client.agents.create_agent(\n    model=model_deployment_name,\n    name=\"my-agent\",\n    instructions=\"You are a helpful agent\",\n    tools=ai_search.definitions,\n    tool_resources=ai_search.resources,\n)",
     "options": [
-      "Concurrent orchestration",
-      "Sequential only",
-      "Single direct model call",
-      "Speech translation"
+      "tools=ai_search.definitions and tool_resources=ai_search.resources",
+      "model and name",
+      "instructions and name",
+      "top and select"
     ],
     "answer": "A",
-    "explanation": "Concurrent orchestration supports independent parallel perspectives.",
+    "explanation": "Foundry agent tools commonly pass both tool definitions and their resources into agent creation.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {
     "number": 84,
     "section": "Implement generative AI and agentic solutions",
     "type": "Single answer",
-    "topic": "Group chat",
-    "stem": "A writer agent and reviewer agent iteratively improve a response until criteria are met. Which pattern best describes this?",
-    "code": null,
+    "topic": "Structured inputs",
+    "stem": "Which structured input is required at runtime?",
+    "code": "tool = FileSearchTool(vector_store_ids=[\"{{vector_store_id}}\"])\nagent = project.agents.create_version(\n    agent_name=\"file-search-structured\",\n    definition=PromptAgentDefinition(\n        model=\"gpt-5-mini\",\n        instructions=\"Search product information.\",\n        tools=[tool],\n        structured_inputs={\n            \"vector_store_id\": StructuredInputDefinition(\n                description=\"Vector store ID for file search\",\n                required=True,\n                schema={\"type\": \"string\"},\n            ),\n        },\n    ),\n)",
     "options": [
-      "Group chat maker-checker loop",
-      "Vector-only search",
-      "Provisioned deployment",
-      "Face verification"
+      "vector_store_id",
+      "analysis_file_id",
+      "MODEL_DEPLOYMENT_NAME",
+      "query_vector"
     ],
     "answer": "A",
-    "explanation": "Maker-checker is a group-chat validation loop.",
+    "explanation": "The structured_inputs dictionary defines vector_store_id with required=True.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {
     "number": 85,
     "section": "Implement generative AI and agentic solutions",
     "type": "Single answer",
-    "topic": "Handoff",
-    "stem": "An agent starts with general triage and transfers to a billing agent when the issue is clearly billing-related. Which pattern fits?",
-    "code": null,
+    "topic": "Tool choice",
+    "stem": "What does tool_choice=\"required\" force in this request?",
+    "code": "response = openai.responses.create(\n    conversation=conversation.id,\n    input=\"Read numbers.csv and return the sum of x.\",\n    extra_body={\n        \"agent_reference\": {\"name\": agent.name, \"type\": \"agent_reference\"},\n        \"structured_inputs\": {\"analysis_file_id\": uploaded.id},\n    },\n    tool_choice=\"required\",\n)",
     "options": [
-      "Handoff orchestration",
-      "Magentic only",
-      "Semantic chunking",
-      "Text-to-speech"
+      "The model must use a tool when generating the response",
+      "The response must be a video",
+      "The model must ignore uploaded files",
+      "The vector store must be deleted"
     ],
     "answer": "A",
-    "explanation": "Handoff transfers active responsibility based on conditions.",
+    "explanation": "tool_choice='required' requires tool use for the response.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {
     "number": 86,
     "section": "Implement generative AI and agentic solutions",
     "type": "Single answer",
-    "topic": "Magentic",
-    "stem": "An incident-response system must create and update a task ledger because the solution path is unknown. Which pattern fits?",
-    "code": null,
+    "topic": "RAG retrieval count",
+    "stem": "How many nearest neighbors does the vector query request before final result shaping?",
+    "code": "vector_query = VectorizedQuery(\n    vector=query_vector,\n    k_nearest_neighbors=10,\n    fields=\"DescriptionVector\",\n    exhaustive=True\n)",
     "options": [
-      "Magentic orchestration",
-      "Direct model call",
-      "Fixed OCR pipeline",
-      "Dense captioning"
+      "10",
+      "5",
+      "7",
+      "300"
     ],
     "answer": "A",
-    "explanation": "Magentic orchestration fits open-ended adaptive planning.",
+    "explanation": "The k_nearest_neighbors setting requests 10 nearest neighbors for the vector query.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {
     "number": 87,
     "section": "Implement generative AI and agentic solutions",
-    "type": "Single answer",
-    "topic": "Evaluation",
-    "stem": "A RAG app returns fluent answers but misses critical expected information. Which evaluator best targets recall of expected information?",
-    "code": null,
+    "type": "Multiple response (2 correct)",
+    "topic": "Hybrid semantic retrieval",
+    "stem": "Which two lines are required for semantic hybrid search in this snippet?",
+    "code": "results = search_client.search(\n    search_text=\"historic hotel walk to restaurants and shopping\",\n    vector_queries=[vector_query],\n    query_type=\"semantic\",\n    semantic_configuration_name=\"my-semantic-config\",\n    top=5\n)",
     "options": [
-      "Response Completeness",
-      "TTS voice quality",
-      "Object detection",
-      "Liveness detection"
+      "vector_queries=[vector_query]",
+      "query_type=\"semantic\"",
+      "audio_config=audio_config",
+      "locale=\"en-US\""
     ],
-    "answer": "A",
-    "explanation": "Response completeness focuses on missing critical information.",
+    "answer": "A, B",
+    "explanation": "Hybrid semantic search needs vector retrieval plus semantic query configuration.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {
@@ -2978,51 +2978,51 @@
     "number": 176,
     "section": "Implement computer vision solutions",
     "type": "Single answer",
-    "topic": "Image generation",
-    "stem": "A marketing team needs new product concept images from natural-language prompts. Which capability should be used?",
-    "code": null,
+    "topic": "Multimodal chat",
+    "stem": "What input type tells the model that the request includes an image?",
+    "code": "completion = client.chat.completions.create(\n    model=\"gpt-4o\",\n    messages=[\n        {\n            \"role\": \"user\",\n            \"content\": [\n                {\"type\": \"text\", \"text\": \"What's in this image?\"},\n                {\"type\": \"image_url\", \"image_url\": {\"url\": image_url}},\n            ],\n        }\n    ],\n    max_tokens=300,\n)",
     "options": [
-      "Image generation model in Foundry/Azure OpenAI",
-      "Azure AI Search only",
-      "Speech-to-text",
-      "Document layout model"
+      "image_url",
+      "text",
+      "audio_config",
+      "vector_queries"
     ],
     "answer": "A",
-    "explanation": "The task is creating images, not analyzing or indexing them.",
+    "explanation": "The message content contains an item with type image_url, which supplies the image reference.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {
     "number": 177,
     "section": "Implement computer vision solutions",
     "type": "Single answer",
-    "topic": "Inpainting",
-    "stem": "A designer wants to replace only one object in a generated image while preserving the rest. Which editing method is most relevant?",
-    "code": null,
+    "topic": "Image response length",
+    "stem": "What is the maximum output token value requested for the image analysis response?",
+    "code": "completion = client.chat.completions.create(\n    model=\"gpt-4o\",\n    messages=[{\"role\": \"user\", \"content\": content}],\n    max_tokens=300,\n)",
     "options": [
-      "Mask-based inpainting",
-      "Semantic ranking",
-      "Speech synthesis",
-      "Long-term memory"
+      "300",
+      "5",
+      "10",
+      "5000"
     ],
     "answer": "A",
-    "explanation": "Inpainting edits a selected/masked region.",
+    "explanation": "The request sets max_tokens to 300.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {
     "number": 178,
     "section": "Implement computer vision solutions",
     "type": "Single answer",
-    "topic": "Captioning",
-    "stem": "An app must generate concise descriptions for uploaded images to improve accessibility. Which capability is relevant?",
-    "code": null,
+    "topic": "Visual grounding",
+    "stem": "Which part of the message provides the natural-language question about the image?",
+    "code": "content = [\n    {\"type\": \"text\", \"text\": \"What's in this image?\"},\n    {\"type\": \"image_url\", \"image_url\": {\"url\": image_url}},\n]",
     "options": [
-      "Image captioning / alt-text generation",
-      "Provisioned throughput only",
-      "Agent handoff",
-      "Keyword filters only"
+      "{\"type\": \"text\", \"text\": \"What's in this image?\"}",
+      "{\"type\": \"image_url\", ...}",
+      "max_tokens=300",
+      "model=\"gpt-4o\""
     ],
     "answer": "A",
-    "explanation": "Captions and alt text describe image content for accessibility.",
+    "explanation": "The text content item contains the user question; the image_url item supplies the visual evidence.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {
@@ -3658,85 +3658,85 @@
     "number": 216,
     "section": "Implement text analysis solutions",
     "type": "Single answer",
-    "topic": "Entity extraction",
-    "stem": "A compliance app must identify organizations, people, and key phrases in text. Which capability is most relevant?",
-    "code": null,
+    "topic": "Speech synthesis voice",
+    "stem": "Which voice name is configured for text-to-speech synthesis?",
+    "code": "speech_config = speechsdk.SpeechConfig(\n    subscription=os.environ.get(\"SPEECH_KEY\"),\n    endpoint=os.environ.get(\"ENDPOINT\")\n)\naudio_config = speechsdk.audio.AudioOutputConfig(use_default_speaker=True)\nspeech_config.speech_synthesis_voice_name = \"en-US-Ava:DragonHDLatestNeural\"\n\nspeech_synthesizer = speechsdk.SpeechSynthesizer(\n    speech_config=speech_config,\n    audio_config=audio_config\n)",
     "options": [
-      "Azure AI Language text analytics/entity extraction",
-      "Image inpainting",
-      "Video summarization only",
-      "TTS output format"
+      "en-US-Ava:DragonHDLatestNeural",
+      "en-US",
+      "SPEECH_KEY",
+      "YourEndpointId"
     ],
     "answer": "A",
-    "explanation": "Text analytics extracts semantic information from text.",
+    "explanation": "The speech_synthesis_voice_name property is set to en-US-Ava:DragonHDLatestNeural.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {
     "number": 217,
     "section": "Implement text analysis solutions",
     "type": "Single answer",
-    "topic": "Structured JSON",
-    "stem": "A generative workflow must output a valid object with invoice_id, vendor, and total. What should you add?",
-    "code": null,
+    "topic": "Speech synthesis result",
+    "stem": "Which result reason indicates the text-to-speech operation completed successfully?",
+    "code": "speech_synthesis_result = speech_synthesizer.speak_text_async(text).get()\n\nif speech_synthesis_result.reason == speechsdk.ResultReason.SynthesizingAudioCompleted:\n    print(\"Speech synthesized for text [{}]\".format(text))\nelif speech_synthesis_result.reason == speechsdk.ResultReason.Canceled:\n    cancellation_details = speech_synthesis_result.cancellation_details",
     "options": [
-      "A strict schema or structured output validation",
-      "A random voice",
-      "A face model",
-      "A larger image mask"
+      "speechsdk.ResultReason.SynthesizingAudioCompleted",
+      "speechsdk.ResultReason.Canceled",
+      "speechsdk.CancellationReason.Error",
+      "speechsdk.ResultReason.NoMatch"
     ],
     "answer": "A",
-    "explanation": "Automation needs constrained, validated structured output.",
+    "explanation": "The Speech SDK sample checks SynthesizingAudioCompleted for successful synthesis.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {
     "number": 218,
     "section": "Implement text analysis solutions",
     "type": "Single answer",
-    "topic": "Sentiment",
-    "stem": "A contact center dashboard needs positive/neutral/negative classification of messages. Which capability fits?",
-    "code": null,
+    "topic": "Speech translation",
+    "stem": "Which language code is added as a translation target in this loop?",
+    "code": "from_language = \"en-US\"\nto_languages = [\"de\", \"it\", \"pt\"]\n\ntranslation_config.speech_recognition_language = from_language\nfor lang in to_languages:\n    translation_config.add_target_language(lang)",
     "options": [
-      "Sentiment analysis",
-      "Vector indexing only",
-      "Image generation",
-      "Agent-to-agent endpoint"
+      "de",
+      "en-US",
+      "SPEECH_REGION",
+      "AvaNeural"
     ],
     "answer": "A",
-    "explanation": "Sentiment analysis classifies opinion polarity.",
+    "explanation": "The to_languages list includes 'de', and each value is passed to add_target_language.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {
     "number": 219,
     "section": "Implement text analysis solutions",
     "type": "Single answer",
-    "topic": "Translation",
-    "stem": "A multilingual app needs predictable translation between supported languages. Which service is the simplest fit?",
-    "code": null,
+    "topic": "Sentiment analysis",
+    "stem": "Which method performs sentiment analysis in this snippet?",
+    "code": "documents = [\n    \"The food and service were unacceptable. The concierge was nice, however.\"\n]\n\nresult = client.analyze_sentiment(\n    documents,\n    show_opinion_mining=True\n)",
     "options": [
-      "Azure Translator",
-      "Document Intelligence layout",
-      "Magentic orchestration",
-      "Code interpreter"
+      "analyze_sentiment",
+      "recognize_pii_entities",
+      "begin_analyze_document",
+      "speak_text_async"
     ],
     "answer": "A",
-    "explanation": "Translator is the dedicated service for text translation.",
+    "explanation": "TextAnalyticsClient.analyze_sentiment performs sentiment analysis on the document list.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {
     "number": 220,
     "section": "Implement text analysis solutions",
     "type": "Single answer",
-    "topic": "Speech-to-text",
-    "stem": "A voice assistant must convert spoken user input into text before the agent reasons over it. Which step is required first?",
-    "code": null,
+    "topic": "Opinion mining",
+    "stem": "Which argument enables opinion mining in the sentiment request?",
+    "code": "result = client.analyze_sentiment(\n    documents,\n    show_opinion_mining=True\n)",
     "options": [
-      "Speech-to-text transcription",
-      "Text-to-image generation",
-      "Semantic ranking",
-      "Inpainting"
+      "show_opinion_mining=True",
+      "logging_enable=True",
+      "include_total_count=True",
+      "query_type=\"semantic\""
     ],
     "answer": "A",
-    "explanation": "STT converts audio input to text.",
+    "explanation": "The show_opinion_mining argument asks for mined opinions in addition to sentiment.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {
@@ -4337,86 +4337,86 @@
   {
     "number": 256,
     "section": "Implement information extraction solutions",
-    "type": "Multiple response (2 correct)",
-    "topic": "RAG-ready indexing",
-    "stem": "Which two items should be stored in a search index to support grounded answers with citations?",
-    "code": null,
+    "type": "Single answer",
+    "topic": "Document Intelligence model",
+    "stem": "Which prebuilt model is used by this Document Intelligence request?",
+    "code": "poller = document_intelligence_client.begin_analyze_document(\n    \"prebuilt-invoice\",\n    AnalyzeDocumentRequest(url_source=invoiceUrl)\n)\ninvoices = poller.result()",
     "options": [
-      "Human-readable chunk text",
-      "Source metadata such as document title, URL, page, or segment",
-      "TTS speaker object",
-      "Random image seed"
+      "prebuilt-invoice",
+      "prebuilt-layout",
+      "prebuilt-receipt",
+      "prebuilt-documentSearch"
     ],
-    "answer": "A, B",
-    "explanation": "RAG needs retrievable text plus metadata for citation/provenance.",
+    "answer": "A",
+    "explanation": "The first argument to begin_analyze_document is prebuilt-invoice.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {
     "number": 257,
     "section": "Implement information extraction solutions",
     "type": "Single answer",
-    "topic": "Chunking",
-    "stem": "A 200-page policy document produces poor retrieval when indexed as one vector. What should you do?",
-    "code": null,
+    "topic": "Document Intelligence request source",
+    "stem": "Which property supplies the document URL to the analysis request?",
+    "code": "invoiceUrl = \"https://example.com/sample-invoice.pdf\"\npoller = document_intelligence_client.begin_analyze_document(\n    \"prebuilt-invoice\",\n    AnalyzeDocumentRequest(url_source=invoiceUrl)\n)",
     "options": [
-      "Chunk the document into semantically meaningful sections",
-      "Increase speech volume",
-      "Use image inpainting",
-      "Disable all metadata"
+      "url_source",
+      "query_fields",
+      "locale",
+      "include_total_count"
     ],
     "answer": "A",
-    "explanation": "Chunking improves retrieval granularity.",
+    "explanation": "AnalyzeDocumentRequest receives the invoice URL through url_source.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {
     "number": 258,
     "section": "Implement information extraction solutions",
     "type": "Single answer",
-    "topic": "Overlap",
-    "stem": "Why might chunks include overlap?",
-    "code": null,
+    "topic": "Query fields",
+    "stem": "Which two field names are requested by query_fields?",
+    "code": "poller = document_intelligence_client.begin_analyze_document(\n    \"prebuilt-layout\",\n    AnalyzeDocumentRequest(url_source=formUrl),\n    features=[DocumentAnalysisFeature.QUERY_FIELDS],\n    query_fields=[\"Address\", \"InvoiceNumber\"],\n)",
     "options": [
-      "To preserve context across chunk boundaries",
-      "To reduce all token usage to zero",
-      "To enable face liveness",
-      "To create a voice model"
+      "Address and InvoiceNumber",
+      "VendorName and TotalTax",
+      "HotelName and Description",
+      "MerchantName and TransactionDate"
     ],
     "answer": "A",
-    "explanation": "Overlap helps continuity between adjacent chunks.",
+    "explanation": "The query_fields list contains Address and InvoiceNumber.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {
     "number": 259,
     "section": "Implement information extraction solutions",
     "type": "Single answer",
-    "topic": "Semantic layout chunking",
-    "stem": "A document has important headings and tables. Which enrichment helps preserve structure for RAG?",
-    "code": null,
+    "topic": "Content Understanding analyzer",
+    "stem": "Which Content Understanding analyzer is selected?",
+    "code": "poller = client.begin_analyze(\n    analyzer_id=\"prebuilt-invoice\",\n    inputs=[AnalysisInput(url=invoice_url)],\n)\nresult = poller.result()",
     "options": [
-      "Document Layout skill or layout-aware extraction to Markdown",
-      "Text-to-speech SSML",
-      "Image mask only",
-      "Agent memory only"
+      "prebuilt-invoice",
+      "prebuilt-documentSearch",
+      "prebuilt-receipt",
+      "my-semantic-config"
     ],
     "answer": "A",
-    "explanation": "Layout-aware extraction keeps headings/tables useful for retrieval.",
+    "explanation": "The begin_analyze call sets analyzer_id to prebuilt-invoice.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {
     "number": 260,
     "section": "Implement information extraction solutions",
     "type": "Single answer",
-    "topic": "Document Intelligence",
-    "stem": "You need to extract fields from standard invoices with confidence scores. Which service is usually most appropriate?",
-    "code": null,
+    "topic": "Markdown extraction",
+    "stem": "Which property is printed as markdown content from the Content Understanding result?",
+    "code": "poller = await client.begin_analyze(\n    analyzer_id=\"prebuilt-documentSearch\",\n    inputs=[AnalysisInput(url=file_url)]\n)\nresult = await poller.result()\ncontent = result.contents[0]\nprint(content.markdown)",
     "options": [
-      "Azure AI Document Intelligence prebuilt invoice model",
-      "Video Indexer",
-      "Web search only",
-      "DALL-E"
+      "content.markdown",
+      "content.fields",
+      "result.documents",
+      "invoice.fields"
     ],
     "answer": "A",
-    "explanation": "Document Intelligence has prebuilt models for common forms.",
+    "explanation": "The documentSearch example prints content.markdown for downstream document representation.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {

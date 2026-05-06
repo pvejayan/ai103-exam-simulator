@@ -1,5 +1,5 @@
 const PASS_SCORE = 700;
-const STORAGE_KEY = "ai103-exam-session-v1";
+const STORAGE_KEY = "ai103-exam-session-v2";
 
 const state = {
   bank: [],
@@ -109,6 +109,9 @@ function createSession() {
 
   if (mode === "section") {
     pool = pool.filter((question) => question.section === els.sectionSelect.value);
+  }
+  if (mode === "code") {
+    pool = pool.filter((question) => Boolean(question.code));
   }
 
   const limit = mode === "quick" ? 50 : pool.length;
@@ -295,6 +298,7 @@ function beginExam() {
 els.modeSelect.addEventListener("change", () => {
   els.sectionPicker.classList.toggle("is-hidden", els.modeSelect.value !== "section");
   if (els.modeSelect.value === "quick") els.timerSelect.value = "45";
+  if (els.modeSelect.value === "code") els.timerSelect.value = "45";
   if (els.modeSelect.value === "full") els.timerSelect.value = "180";
 });
 
