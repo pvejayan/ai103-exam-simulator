@@ -1,5 +1,12 @@
 const PASS_SCORE = 700;
-const STORAGE_KEY = "ai103-exam-session-v4";
+const STORAGE_KEY = "ai103-exam-session-v5";
+const MODE_LIMITS = {
+  full: 100,
+  quick: 50,
+  code: 50,
+  speech: 50,
+  section: 50,
+};
 
 const state = {
   bank: [],
@@ -126,7 +133,7 @@ function createSession() {
     });
   }
 
-  const limit = mode === "quick" ? 50 : pool.length;
+  const limit = MODE_LIMITS[mode] ? Math.min(MODE_LIMITS[mode], pool.length) : pool.length;
   const questions = shuffle(pool).slice(0, limit).map(buildExamQuestion);
   const now = Date.now();
 

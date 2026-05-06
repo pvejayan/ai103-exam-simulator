@@ -7,8 +7,9 @@ This simulator contains original practice questions aligned to the Microsoft Lea
 1. Start with **Quick simulation** to establish a baseline.
 2. Use **Section practice** for weak areas.
 3. Use **Code practice** for SDK, parameter, and snippet interpretation questions.
-4. Use **Full simulation** when you want exam stamina practice.
-5. Review every missed or flagged question and map it back to the Microsoft Learn topic.
+4. Use **Exam simulation** for a fresh randomized 100-question attempt from the full bank.
+5. Use **Full bank review** when you want to work through every available question.
+6. Review every missed or flagged question and map it back to the Microsoft Learn topic.
 
 ## How To Approach Questions
 
