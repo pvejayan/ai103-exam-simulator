@@ -30,6 +30,7 @@
               <option value="full">Full simulation: 300 questions</option>
               <option value="quick">Quick simulation: 50 questions</option>
               <option value="code">Code practice: snippet questions</option>
+              <option value="speech">Speech practice: Voice Live and Speech SDK</option>
               <option value="section">Section practice</option>
             </select>
           </label>
@@ -53,6 +54,36 @@
         <div class="actions">
           <button id="startBtn" class="primary">Start exam</button>
           <button id="resumeBtn" class="secondary is-hidden">Resume saved exam</button>
+          <button id="guideBtn" class="secondary">Test-taker guide</button>
+        </div>
+      </section>
+
+      <section id="guideView" class="guide is-hidden">
+        <div class="exam-header">
+          <div>
+            <p class="eyebrow">AI-103 preparation guide</p>
+            <h2>How to use the simulator</h2>
+          </div>
+          <button id="closeGuideBtn" class="secondary" type="button">Back</button>
+        </div>
+
+        <div class="guide-grid">
+          <article>
+            <h3>Before you start</h3>
+            <p>Use Full simulation when you want exam stamina practice. Use Quick simulation for daily revision. Use Code practice for snippet questions. Use Speech practice for Voice Live and Speech SDK topics. Use Section practice after a weak section appears in your score report.</p>
+          </article>
+          <article>
+            <h3>During the exam</h3>
+            <p>Read the final sentence first, then inspect the scenario or code. For multiple-response questions, select every required option and avoid adding an extra plausible but unnecessary answer. Flag uncertain questions and move on.</p>
+          </article>
+          <article>
+            <h3>Code questions</h3>
+            <p>Look for method names, parameter values, environment variable names, selected fields, model deployment names, result reasons, and SDK object types. Many questions ask what exact value is configured or which line enables a capability.</p>
+          </article>
+          <article>
+            <h3>After submission</h3>
+            <p>Review missed and flagged questions. Write down the topic, not just the answer. Revisit Microsoft Learn for the weakest services before taking another simulation.</p>
+          </article>
         </div>
       </section>
 
@@ -87,6 +118,7 @@
               <button id="prevBtn" class="secondary" type="button">Previous</button>
               <button id="nextBtn" class="secondary" type="button">Next</button>
               <button id="finishBtn" class="danger" type="button">Finish exam</button>
+              <button id="cancelBtn" class="secondary" type="button">Cancel exam</button>
             </div>
           </article>
         </div>

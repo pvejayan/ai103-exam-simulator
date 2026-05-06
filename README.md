@@ -26,10 +26,17 @@ docker stop ai103-exam-sim
 - Full 300-question simulation
 - Quick 50-question mode
 - Code practice mode for snippet-based questions
+- Speech practice mode for Voice Live and Speech SDK questions
 - Section practice mode
+- Cancel exam control that discards the current attempt
+- Test-taker guide for revision strategy
 - Single-choice and multiple-response questions
 - Shuffled questions and shuffled answers
 - Timer
 - Flagged-question review
 - Simulated pass/fail using a 700/1000 pass mark
 - Section score breakdown and explanations
+
+## Test-taker guide
+
+See [TEST_TAKER_GUIDE.md](TEST_TAKER_GUIDE.md).

@@ -1,5 +1,5 @@
 const PASS_SCORE = 700;
-const STORAGE_KEY = "ai103-exam-session-v2";
+const STORAGE_KEY = "ai103-exam-session-v4";
 
 const state = {
   bank: [],
@@ -8,8 +8,11 @@ const state = {
   timerId: null,
 };
 
+const SPEECH_TERMS = ["speech", "voice", "pronunciation", "tts", "audio", "translation"];
+
 const els = {
   setupView: document.getElementById("setupView"),
+  guideView: document.getElementById("guideView"),
   examView: document.getElementById("examView"),
   resultView: document.getElementById("resultView"),
   modeSelect: document.getElementById("modeSelect"),
@@ -18,6 +21,8 @@ const els = {
   timerSelect: document.getElementById("timerSelect"),
   startBtn: document.getElementById("startBtn"),
   resumeBtn: document.getElementById("resumeBtn"),
+  guideBtn: document.getElementById("guideBtn"),
+  closeGuideBtn: document.getElementById("closeGuideBtn"),
   sectionLabel: document.getElementById("sectionLabel"),
   questionCounter: document.getElementById("questionCounter"),
   timerLabel: document.getElementById("timerLabel"),
@@ -32,6 +37,7 @@ const els = {
   prevBtn: document.getElementById("prevBtn"),
   nextBtn: document.getElementById("nextBtn"),
   finishBtn: document.getElementById("finishBtn"),
+  cancelBtn: document.getElementById("cancelBtn"),
   resultBanner: document.getElementById("resultBanner"),
   sectionResults: document.getElementById("sectionResults"),
   reviewList: document.getElementById("reviewList"),
@@ -74,7 +80,7 @@ function formatTime(totalSeconds) {
 }
 
 function show(view) {
-  [els.setupView, els.examView, els.resultView].forEach((item) => item.classList.add("is-hidden"));
+  [els.setupView, els.guideView, els.examView, els.resultView].forEach((item) => item.classList.add("is-hidden"));
   view.classList.remove("is-hidden");
 }
 
@@ -112,6 +118,12 @@ function createSession() {
   }
   if (mode === "code") {
     pool = pool.filter((question) => Boolean(question.code));
+  }
+  if (mode === "speech") {
+    pool = pool.filter((question) => {
+      const text = `${question.section} ${question.topic} ${question.stem}`.toLowerCase();
+      return SPEECH_TERMS.some((term) => text.includes(term));
+    });
   }
 
   const limit = mode === "quick" ? 50 : pool.length;
@@ -238,6 +250,15 @@ function finishExam() {
   renderResults();
 }
 
+function cancelExam() {
+  clearInterval(state.timerId);
+  localStorage.removeItem(STORAGE_KEY);
+  state.session = null;
+  state.currentIndex = 0;
+  show(els.setupView);
+  els.resumeBtn.classList.add("is-hidden");
+}
+
 function renderResults() {
   const questions = state.session.questions;
   const correct = questions.filter(answerIsCorrect).length;
@@ -299,12 +320,21 @@ els.modeSelect.addEventListener("change", () => {
   els.sectionPicker.classList.toggle("is-hidden", els.modeSelect.value !== "section");
   if (els.modeSelect.value === "quick") els.timerSelect.value = "45";
   if (els.modeSelect.value === "code") els.timerSelect.value = "45";
+  if (els.modeSelect.value === "speech") els.timerSelect.value = "45";
   if (els.modeSelect.value === "full") els.timerSelect.value = "180";
 });
 
 els.startBtn.addEventListener("click", () => {
   createSession();
   beginExam();
+});
+
+els.guideBtn.addEventListener("click", () => {
+  show(els.guideView);
+});
+
+els.closeGuideBtn.addEventListener("click", () => {
+  show(els.setupView);
 });
 
 els.resumeBtn.addEventListener("click", () => {
@@ -338,13 +368,14 @@ els.finishBtn.addEventListener("click", () => {
   if (window.confirm(message)) finishExam();
 });
 
+els.cancelBtn.addEventListener("click", () => {
+  if (window.confirm("Cancel this exam and discard your current answers?")) {
+    cancelExam();
+  }
+});
+
 els.restartBtn.addEventListener("click", () => {
-  clearInterval(state.timerId);
-  localStorage.removeItem(STORAGE_KEY);
-  state.session = null;
-  state.currentIndex = 0;
-  show(els.setupView);
-  els.resumeBtn.classList.add("is-hidden");
+  cancelExam();
 });
 
 async function init() {

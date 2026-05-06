@@ -3760,119 +3760,119 @@
     "number": 222,
     "section": "Implement text analysis solutions",
     "type": "Single answer",
-    "topic": "Speech translation",
-    "stem": "An app must recognize English speech and return German text. Which capability is needed?",
-    "code": null,
+    "topic": "Voice Live API",
+    "stem": "Which transport does the Voice Live API use for server-to-server real-time events?",
+    "code": "# Conceptual Voice Live connection flow\nasync with VoiceLiveClient(endpoint=endpoint, credential=credential) as client:\n    async with client.connect(model=\"gpt-4o-realtime\") as connection:\n        await connection.session.update(session={\n            \"modalities\": [\"text\", \"audio\"],\n            \"instructions\": \"You are a helpful voice agent.\"\n        })",
     "options": [
-      "Speech translation",
-      "Dense captions",
-      "Provisioned throughput",
-      "Groundedness Pro"
+      "WebSocket messages",
+      "Batch REST polling only",
+      "SMTP messages",
+      "Static JSON files in Blob Storage"
     ],
     "answer": "A",
-    "explanation": "Speech translation transcribes spoken input and translates it.",
+    "explanation": "Microsoft Learn describes Voice Live API integration through WebSocket events for real-time voice agents.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {
     "number": 223,
     "section": "Implement text analysis solutions",
     "type": "Single answer",
-    "topic": "Custom speech",
-    "stem": "A company needs a brand-specific synthetic voice for an approved scenario. Which capability applies?",
-    "code": null,
+    "topic": "Voice Live with agents",
+    "stem": "In a Voice Live with Foundry Agent Service design, why would you use an agent ID instead of direct model instructions?",
+    "code": "session_config = {\n    \"type\": \"realtime\",\n    \"agent_id\": os.environ[\"FOUNDRY_AGENT_ID\"],\n    \"modalities\": [\"audio\", \"text\"]\n}",
     "options": [
-      "Custom neural voice, subject to availability/limited access",
-      "Vector query",
-      "Layout chunking",
-      "A2A only"
+      "The agent centralizes prompt and behavior configuration in Foundry",
+      "It removes the need for an Azure subscription",
+      "It disables audio input",
+      "It forces batch-only transcription"
     ],
     "answer": "A",
-    "explanation": "Custom neural voice supports unique brand voices where allowed.",
+    "explanation": "The agent approach uses built-in prompt/configuration managed on the agent, which improves maintainability for conversational logic.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {
     "number": 224,
     "section": "Implement text analysis solutions",
     "type": "Single answer",
-    "topic": "Entity extraction",
-    "stem": "A compliance app must identify organizations, people, and key phrases in text. Which capability is most relevant?",
-    "code": null,
+    "topic": "Voice Live feature",
+    "stem": "Which feature helps prevent the agent from recognizing its own spoken output as user input?",
+    "code": "voice_live_options = {\n    \"input_audio_noise_reduction\": {\"type\": \"near_field\"},\n    \"turn_detection\": {\"type\": \"server_vad\"},\n    \"echo_cancellation\": True\n}",
     "options": [
-      "Azure AI Language text analytics/entity extraction",
-      "Image inpainting",
-      "Video summarization only",
-      "TTS output format"
+      "Echo cancellation",
+      "Semantic ranking",
+      "Document layout extraction",
+      "OCR query fields"
     ],
     "answer": "A",
-    "explanation": "Text analytics extracts semantic information from text.",
+    "explanation": "Voice Live includes advanced conversational features such as echo cancellation, noise suppression, interruption detection, and end-of-turn detection.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {
     "number": 225,
     "section": "Implement text analysis solutions",
     "type": "Single answer",
-    "topic": "Structured JSON",
-    "stem": "A generative workflow must output a valid object with invoice_id, vendor, and total. What should you add?",
-    "code": null,
+    "topic": "Voice Live managed model",
+    "stem": "According to Microsoft Learn, what do you not need to deploy separately to use Voice Live?",
+    "code": "# Voice Live quickstart note:\n# Use a Foundry project/resource in a supported region.\n# Voice Live manages the underlying real-time audio model deployment.",
     "options": [
-      "A strict schema or structured output validation",
-      "A random voice",
-      "A face model",
-      "A larger image mask"
+      "An audio model",
+      "A Foundry project",
+      "A supported region",
+      "A client application"
     ],
     "answer": "A",
-    "explanation": "Automation needs constrained, validated structured output.",
+    "explanation": "Voice Live is fully managed and does not require you to deploy an audio model separately.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {
     "number": 226,
     "section": "Implement text analysis solutions",
     "type": "Single answer",
-    "topic": "Sentiment",
-    "stem": "A contact center dashboard needs positive/neutral/negative classification of messages. Which capability fits?",
-    "code": null,
+    "topic": "Speech recognition",
+    "stem": "Which method starts a one-shot speech recognition operation from the microphone?",
+    "code": "speech_config = speechsdk.SpeechConfig(\n    subscription=\"YourSpeechKey\",\n    region=\"YourSpeechRegion\"\n)\nspeech_recognizer = speechsdk.SpeechRecognizer(speech_config=speech_config)\nspeech_recognition_result = speech_recognizer.recognize_once_async().get()\nprint(speech_recognition_result.text)",
     "options": [
-      "Sentiment analysis",
-      "Vector indexing only",
-      "Image generation",
-      "Agent-to-agent endpoint"
+      "recognize_once_async().get()",
+      "speak_text_async(text).get()",
+      "begin_analyze_document(...)",
+      "search_client.search(...)"
     ],
     "answer": "A",
-    "explanation": "Sentiment analysis classifies opinion polarity.",
+    "explanation": "The SpeechRecognizer sample uses recognize_once_async().get() to capture and transcribe one utterance.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {
     "number": 227,
     "section": "Implement text analysis solutions",
     "type": "Single answer",
-    "topic": "Translation",
-    "stem": "A multilingual app needs predictable translation between supported languages. Which service is the simplest fit?",
-    "code": null,
+    "topic": "Pronunciation assessment",
+    "stem": "Which object is applied to the recognizer to enable pronunciation scoring?",
+    "code": "speech_recognizer = speechsdk.SpeechRecognizer(\n    speech_config=speech_config,\n    audio_config=audio_config\n)\npronunciation_assessment_config.apply_to(speech_recognizer)\nspeech_recognition_result = speech_recognizer.recognize_once()\nassessment = speechsdk.PronunciationAssessmentResult(speech_recognition_result)",
     "options": [
-      "Azure Translator",
-      "Document Intelligence layout",
-      "Magentic orchestration",
-      "Code interpreter"
+      "pronunciation_assessment_config",
+      "speech_synthesizer",
+      "SearchClient",
+      "VectorizedQuery"
     ],
     "answer": "A",
-    "explanation": "Translator is the dedicated service for text translation.",
+    "explanation": "PronunciationAssessmentConfig is applied to the SpeechRecognizer before recognition to return pronunciation assessment results.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {
     "number": 228,
     "section": "Implement text analysis solutions",
     "type": "Single answer",
-    "topic": "Speech-to-text",
-    "stem": "A voice assistant must convert spoken user input into text before the agent reasons over it. Which step is required first?",
-    "code": null,
+    "topic": "Pronunciation JSON result",
+    "stem": "Which property retrieves the raw JSON result for pronunciation assessment?",
+    "code": "pronunciation_assessment_result_json = (\n    speech_recognition_result.properties.get(\n        speechsdk.PropertyId.SpeechServiceResponse_JsonResult\n    )\n)",
     "options": [
-      "Speech-to-text transcription",
-      "Text-to-image generation",
-      "Semantic ranking",
-      "Inpainting"
+      "SpeechServiceResponse_JsonResult",
+      "SpeechServiceConnection_LanguageIdMode",
+      "SpeechSynthesisVoiceName",
+      "SpeechServiceResponse_RequestSentenceBoundary"
     ],
     "answer": "A",
-    "explanation": "STT converts audio input to text.",
+    "explanation": "The Speech SDK result properties can return the service JSON result by using SpeechServiceResponse_JsonResult.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {
@@ -3896,102 +3896,102 @@
     "number": 230,
     "section": "Implement text analysis solutions",
     "type": "Single answer",
-    "topic": "Speech translation",
-    "stem": "An app must recognize English speech and return German text. Which capability is needed?",
-    "code": null,
+    "topic": "Pronunciation granularity",
+    "stem": "What pronunciation-assessment granularity is configured in this JSON?",
+    "code": "pronunciation_assessment_config = speechsdk.PronunciationAssessmentConfig(\n    json_string='{\"referenceText\":\"good morning\",'\n                '\"gradingSystem\":\"HundredMark\",'\n                '\"granularity\":\"Phoneme\",'\n                '\"phonemeAlphabet\":\"IPA\"}'\n)",
     "options": [
-      "Speech translation",
-      "Dense captions",
-      "Provisioned throughput",
-      "Groundedness Pro"
+      "Phoneme",
+      "Word",
+      "Sentence",
+      "Document"
     ],
     "answer": "A",
-    "explanation": "Speech translation transcribes spoken input and translates it.",
+    "explanation": "The PronunciationAssessmentConfig JSON sets granularity to Phoneme.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {
     "number": 231,
     "section": "Implement text analysis solutions",
     "type": "Single answer",
-    "topic": "Custom speech",
-    "stem": "A company needs a brand-specific synthetic voice for an approved scenario. Which capability applies?",
-    "code": null,
+    "topic": "Speech translation target",
+    "stem": "Which target language is configured for speech translation?",
+    "code": "speech_translation_config = speechsdk.translation.SpeechTranslationConfig(\n    subscription=os.environ.get(\"SPEECH_KEY\"),\n    endpoint=os.environ.get(\"ENDPOINT\")\n)\nspeech_translation_config.speech_recognition_language = \"en-US\"\nto_language = \"it\"\nspeech_translation_config.add_target_language(to_language)",
     "options": [
-      "Custom neural voice, subject to availability/limited access",
-      "Vector query",
-      "Layout chunking",
-      "A2A only"
+      "it",
+      "en-US",
+      "ENDPOINT",
+      "SPEECH_KEY"
     ],
     "answer": "A",
-    "explanation": "Custom neural voice supports unique brand voices where allowed.",
+    "explanation": "The SpeechTranslationConfig adds 'it' as the target language.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {
     "number": 232,
     "section": "Implement text analysis solutions",
     "type": "Single answer",
-    "topic": "Entity extraction",
-    "stem": "A compliance app must identify organizations, people, and key phrases in text. Which capability is most relevant?",
-    "code": null,
+    "topic": "Continuous speech translation",
+    "stem": "Which call stops the continuous recognition loop?",
+    "code": "translation_recognizer.start_continuous_recognition()\n\nwhile not done:\n    time.sleep(.5)\n\ntranslation_recognizer.stop_continuous_recognition()",
     "options": [
-      "Azure AI Language text analytics/entity extraction",
-      "Image inpainting",
-      "Video summarization only",
-      "TTS output format"
+      "translation_recognizer.stop_continuous_recognition()",
+      "translation_recognizer.start_continuous_recognition()",
+      "speech_synthesizer.speak_text_async()",
+      "client.search()"
     ],
     "answer": "A",
-    "explanation": "Text analytics extracts semantic information from text.",
+    "explanation": "The Speech SDK continuous translation sample starts recognition and later stops it with stop_continuous_recognition().",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {
     "number": 233,
     "section": "Implement text analysis solutions",
     "type": "Single answer",
-    "topic": "Structured JSON",
-    "stem": "A generative workflow must output a valid object with invoice_id, vendor, and total. What should you add?",
-    "code": null,
+    "topic": "Language identification",
+    "stem": "Which property configures continuous language identification mode?",
+    "code": "translation_config.set_property(\n    property_id=speechsdk.PropertyId.SpeechServiceConnection_LanguageIdMode,\n    value=\"Continuous\"\n)",
     "options": [
-      "A strict schema or structured output validation",
-      "A random voice",
-      "A face model",
-      "A larger image mask"
+      "SpeechServiceConnection_LanguageIdMode",
+      "SpeechServiceResponse_JsonResult",
+      "SpeechServiceResponse_RequestSentenceBoundary",
+      "SpeechSynthesisVoiceName"
     ],
     "answer": "A",
-    "explanation": "Automation needs constrained, validated structured output.",
+    "explanation": "LanguageIdMode controls whether source language identification runs at start or continuously.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {
     "number": 234,
     "section": "Implement text analysis solutions",
     "type": "Single answer",
-    "topic": "Sentiment",
-    "stem": "A contact center dashboard needs positive/neutral/negative classification of messages. Which capability fits?",
-    "code": null,
+    "topic": "Custom voice",
+    "stem": "What must an organization generally do before using Custom Neural Voice?",
+    "code": "# Custom voice planning checklist\nvoice_scenario = \"brand voice for approved support bot\"\nlimited_access_required = True\nvoice_talent_consent_required = True",
     "options": [
-      "Sentiment analysis",
-      "Vector indexing only",
-      "Image generation",
-      "Agent-to-agent endpoint"
+      "Request limited access and meet responsible-use requirements",
+      "Enable semantic ranking",
+      "Create a vector index only",
+      "Use any public voice sample without consent"
     ],
     "answer": "A",
-    "explanation": "Sentiment analysis classifies opinion polarity.",
+    "explanation": "Microsoft Learn states that custom voice is limited access and subject to eligibility and responsible-use criteria.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {
     "number": 235,
     "section": "Implement text analysis solutions",
     "type": "Single answer",
-    "topic": "Translation",
-    "stem": "A multilingual app needs predictable translation between supported languages. Which service is the simplest fit?",
-    "code": null,
+    "topic": "Text-to-speech avatar",
+    "stem": "Which Speech capability creates synthetic video of an avatar speaking from text?",
+    "code": "tts_job = {\n    \"input_kind\": \"text\",\n    \"output_kind\": \"avatar_video\",\n    \"voice\": \"en-US-AvaMultilingualNeural\"\n}",
     "options": [
-      "Azure Translator",
-      "Document Intelligence layout",
-      "Magentic orchestration",
-      "Code interpreter"
+      "Text-to-speech avatar",
+      "Pronunciation assessment",
+      "Search semantic captions",
+      "Document Intelligence layout"
     ],
     "answer": "A",
-    "explanation": "Translator is the dedicated service for text translation.",
+    "explanation": "The text-to-speech transparency note describes avatar support for synthetic video of an avatar speaking.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   },
   {

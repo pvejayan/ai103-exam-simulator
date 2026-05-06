@@ -74,6 +74,7 @@ button:disabled {
 }
 
 .setup,
+.guide,
 .exam,
 .results {
   background: var(--surface);
@@ -334,6 +335,25 @@ select {
   gap: 22px;
 }
 
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  padding-top: 20px;
+}
+
+.guide-grid article {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 16px;
+  background: #fff;
+}
+
+.guide-grid p {
+  color: var(--muted);
+  line-height: 1.5;
+}
+
 .breakdown,
 .review-list {
   display: grid;
@@ -378,6 +398,7 @@ select {
   .masthead,
   .setup-grid,
   .exam-layout,
+  .guide-grid,
   .result-grid {
     grid-template-columns: 1fr;
   }
