@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI-103 Exam Simulator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section id="setupView" class="setup">
+        <div class="masthead">
+          <div>
+            <p class="eyebrow">Microsoft AI-103 practice</p>
+            <h1>Exam simulator</h1>
+            <p class="lede">
+              Original practice questions aligned to Microsoft Learn AI-103 objectives. This is not official Microsoft or Pearson VUE exam content.
+            </p>
+          </div>
+          <div class="scorecard">
+            <span>Pass mark</span>
+            <strong>700 / 1000</strong>
+          </div>
+        </div>
+
+        <div class="setup-grid">
+          <label>
+            Exam mode
+            <select id="modeSelect">
+              <option value="full">Full simulation: 300 questions</option>
+              <option value="quick">Quick simulation: 50 questions</option>
+              <option value="section">Section practice</option>
+            </select>
+          </label>
+
+          <label id="sectionPicker" class="is-hidden">
+            Section
+            <select id="sectionSelect"></select>
+          </label>
+
+          <label>
+            Timer
+            <select id="timerSelect">
+              <option value="180">180 minutes</option>
+              <option value="90">90 minutes</option>
+              <option value="45">45 minutes</option>
+              <option value="0">No timer</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="actions">
+          <button id="startBtn" class="primary">Start exam</button>
+          <button id="resumeBtn" class="secondary is-hidden">Resume saved exam</button>
+        </div>
+      </section>
+
+      <section id="examView" class="exam is-hidden">
+        <header class="exam-header">
+          <div>
+            <p id="sectionLabel" class="eyebrow"></p>
+            <h2 id="questionCounter"></h2>
+          </div>
+          <div class="status-strip">
+            <span id="timerLabel">--:--</span>
+            <span id="answeredLabel">0 answered</span>
+            <span id="flaggedLabel">0 flagged</span>
+          </div>
+        </header>
+
+        <div class="exam-layout">
+          <aside class="navigator">
+            <div class="nav-title">Questions</div>
+            <div id="questionNav" class="question-nav"></div>
+          </aside>
+
+          <article class="question-panel">
+            <div class="question-toolbar">
+              <span id="questionType" class="pill"></span>
+              <button id="flagBtn" class="secondary">Flag</button>
+            </div>
+            <h3 id="questionStem"></h3>
+            <pre id="codeBlock" class="code is-hidden"><code></code></pre>
+            <form id="optionsForm" class="options"></form>
+            <div class="question-actions">
+              <button id="prevBtn" class="secondary" type="button">Previous</button>
+              <button id="nextBtn" class="secondary" type="button">Next</button>
+              <button id="finishBtn" class="danger" type="button">Finish exam</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="resultView" class="results is-hidden">
+        <div id="resultBanner" class="result-banner"></div>
+        <div class="result-grid">
+          <div>
+            <h2>Section breakdown</h2>
+            <div id="sectionResults" class="breakdown"></div>
+          </div>
+          <div>
+            <h2>Review missed and flagged</h2>
+            <div id="reviewList" class="review-list"></div>
+          </div>
+        </div>
+        <div class="actions">
+          <button id="restartBtn" class="primary">Start new exam</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
