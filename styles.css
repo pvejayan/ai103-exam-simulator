@@ -305,6 +305,24 @@ select {
   margin-top: 3px;
 }
 
+.inline-select {
+  display: inline-block;
+  min-width: 160px;
+  margin: 0 6px;
+  padding: 6px 10px;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--ink);
+  vertical-align: baseline;
+}
+
+.inline-select-code {
+  min-width: 190px;
+  font-family: "Courier New", monospace;
+  font-size: 13px;
+}
+
 .result-banner {
   border-radius: 8px;
   padding: 20px;

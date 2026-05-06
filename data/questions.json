@@ -10198,5 +10198,3481 @@
     "answer": "A",
     "explanation": "Agents can use retrieval tools for grounded answers.",
     "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 601,
+    "section": "Plan and manage an Azure AI solution",
+    "type": "Multiple response (2 correct)",
+    "topic": "Managed identity basics 1",
+    "stem": "Which two statements are true about managed identity in Azure AI solutions?",
+    "code": null,
+    "options": [
+      "It avoids hard-coded secrets in code",
+      "It still requires RBAC to access the target resource",
+      "It automatically disables private endpoints",
+      "It replaces all deployment quotas"
+    ],
+    "answer": "A, B",
+    "explanation": "Managed identity provides an identity, but access still depends on RBAC.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 602,
+    "section": "Plan and manage an Azure AI solution",
+    "type": "Multiple response (2 correct)",
+    "topic": "Responsible AI controls 1",
+    "stem": "Which two controls are commonly used to reduce unsafe generative output?",
+    "code": null,
+    "options": [
+      "Content safety filters",
+      "Prompt shields or guardrails",
+      "TTS voice selection",
+      "Semantic captions only"
+    ],
+    "answer": "A, B",
+    "explanation": "Safety filters and guardrails reduce harmful or policy-violating behavior.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 603,
+    "section": "Plan and manage an Azure AI solution",
+    "type": "Multiple response (2 correct)",
+    "topic": "Search monitoring 1",
+    "stem": "Which two signals help diagnose grounding issues in a RAG system?",
+    "code": null,
+    "options": [
+      "Retrieval relevance",
+      "Groundedness evaluation",
+      "Avatar frame rate",
+      "Speech synthesis duration only"
+    ],
+    "answer": "A, B",
+    "explanation": "Grounding issues are usually visible in retrieval and groundedness metrics.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 604,
+    "section": "Plan and manage an Azure AI solution",
+    "type": "Multiple response (2 correct)",
+    "topic": "Private access 1",
+    "stem": "Which two areas should be validated for a private Azure AI deployment?",
+    "code": null,
+    "options": [
+      "Private endpoints or private link paths",
+      "DNS and network resolution",
+      "Prompt length",
+      "Image generation seed"
+    ],
+    "answer": "A, B",
+    "explanation": "Private connectivity depends on endpoint plumbing and name resolution.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 605,
+    "section": "Plan and manage an Azure AI solution",
+    "type": "Multiple response (2 correct)",
+    "topic": "Managed identity basics 2",
+    "stem": "Which two statements are true about managed identity in Azure AI solutions?",
+    "code": null,
+    "options": [
+      "It avoids hard-coded secrets in code",
+      "It still requires RBAC to access the target resource",
+      "It automatically disables private endpoints",
+      "It replaces all deployment quotas"
+    ],
+    "answer": "A, B",
+    "explanation": "Managed identity provides an identity, but access still depends on RBAC.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 606,
+    "section": "Plan and manage an Azure AI solution",
+    "type": "Multiple response (2 correct)",
+    "topic": "Responsible AI controls 2",
+    "stem": "Which two controls are commonly used to reduce unsafe generative output?",
+    "code": null,
+    "options": [
+      "Content safety filters",
+      "Prompt shields or guardrails",
+      "TTS voice selection",
+      "Semantic captions only"
+    ],
+    "answer": "A, B",
+    "explanation": "Safety filters and guardrails reduce harmful or policy-violating behavior.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 607,
+    "section": "Plan and manage an Azure AI solution",
+    "type": "Multiple response (2 correct)",
+    "topic": "Search monitoring 2",
+    "stem": "Which two signals help diagnose grounding issues in a RAG system?",
+    "code": null,
+    "options": [
+      "Retrieval relevance",
+      "Groundedness evaluation",
+      "Avatar frame rate",
+      "Speech synthesis duration only"
+    ],
+    "answer": "A, B",
+    "explanation": "Grounding issues are usually visible in retrieval and groundedness metrics.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 608,
+    "section": "Plan and manage an Azure AI solution",
+    "type": "Multiple response (2 correct)",
+    "topic": "Private access 2",
+    "stem": "Which two areas should be validated for a private Azure AI deployment?",
+    "code": null,
+    "options": [
+      "Private endpoints or private link paths",
+      "DNS and network resolution",
+      "Prompt length",
+      "Image generation seed"
+    ],
+    "answer": "A, B",
+    "explanation": "Private connectivity depends on endpoint plumbing and name resolution.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 609,
+    "section": "Plan and manage an Azure AI solution",
+    "type": "Multiple response (2 correct)",
+    "topic": "Managed identity basics 3",
+    "stem": "Which two statements are true about managed identity in Azure AI solutions?",
+    "code": null,
+    "options": [
+      "It avoids hard-coded secrets in code",
+      "It still requires RBAC to access the target resource",
+      "It automatically disables private endpoints",
+      "It replaces all deployment quotas"
+    ],
+    "answer": "A, B",
+    "explanation": "Managed identity provides an identity, but access still depends on RBAC.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 610,
+    "section": "Plan and manage an Azure AI solution",
+    "type": "Multiple response (2 correct)",
+    "topic": "Responsible AI controls 3",
+    "stem": "Which two controls are commonly used to reduce unsafe generative output?",
+    "code": null,
+    "options": [
+      "Content safety filters",
+      "Prompt shields or guardrails",
+      "TTS voice selection",
+      "Semantic captions only"
+    ],
+    "answer": "A, B",
+    "explanation": "Safety filters and guardrails reduce harmful or policy-violating behavior.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 611,
+    "section": "Plan and manage an Azure AI solution",
+    "type": "Multiple response (2 correct)",
+    "topic": "Search monitoring 3",
+    "stem": "Which two signals help diagnose grounding issues in a RAG system?",
+    "code": null,
+    "options": [
+      "Retrieval relevance",
+      "Groundedness evaluation",
+      "Avatar frame rate",
+      "Speech synthesis duration only"
+    ],
+    "answer": "A, B",
+    "explanation": "Grounding issues are usually visible in retrieval and groundedness metrics.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 612,
+    "section": "Plan and manage an Azure AI solution",
+    "type": "Multiple response (2 correct)",
+    "topic": "Private access 3",
+    "stem": "Which two areas should be validated for a private Azure AI deployment?",
+    "code": null,
+    "options": [
+      "Private endpoints or private link paths",
+      "DNS and network resolution",
+      "Prompt length",
+      "Image generation seed"
+    ],
+    "answer": "A, B",
+    "explanation": "Private connectivity depends on endpoint plumbing and name resolution.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 613,
+    "section": "Plan and manage an Azure AI solution",
+    "type": "Multiple response (2 correct)",
+    "topic": "Managed identity basics 4",
+    "stem": "Which two statements are true about managed identity in Azure AI solutions?",
+    "code": null,
+    "options": [
+      "It avoids hard-coded secrets in code",
+      "It still requires RBAC to access the target resource",
+      "It automatically disables private endpoints",
+      "It replaces all deployment quotas"
+    ],
+    "answer": "A, B",
+    "explanation": "Managed identity provides an identity, but access still depends on RBAC.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 614,
+    "section": "Plan and manage an Azure AI solution",
+    "type": "Multiple response (2 correct)",
+    "topic": "Responsible AI controls 4",
+    "stem": "Which two controls are commonly used to reduce unsafe generative output?",
+    "code": null,
+    "options": [
+      "Content safety filters",
+      "Prompt shields or guardrails",
+      "TTS voice selection",
+      "Semantic captions only"
+    ],
+    "answer": "A, B",
+    "explanation": "Safety filters and guardrails reduce harmful or policy-violating behavior.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 615,
+    "section": "Plan and manage an Azure AI solution",
+    "type": "Multiple response (2 correct)",
+    "topic": "Search monitoring 4",
+    "stem": "Which two signals help diagnose grounding issues in a RAG system?",
+    "code": null,
+    "options": [
+      "Retrieval relevance",
+      "Groundedness evaluation",
+      "Avatar frame rate",
+      "Speech synthesis duration only"
+    ],
+    "answer": "A, B",
+    "explanation": "Grounding issues are usually visible in retrieval and groundedness metrics.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 616,
+    "section": "Plan and manage an Azure AI solution",
+    "type": "Multiple response (2 correct)",
+    "topic": "Private access 4",
+    "stem": "Which two areas should be validated for a private Azure AI deployment?",
+    "code": null,
+    "options": [
+      "Private endpoints or private link paths",
+      "DNS and network resolution",
+      "Prompt length",
+      "Image generation seed"
+    ],
+    "answer": "A, B",
+    "explanation": "Private connectivity depends on endpoint plumbing and name resolution.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 617,
+    "section": "Plan and manage an Azure AI solution",
+    "type": "Multiple response (2 correct)",
+    "topic": "Managed identity basics 5",
+    "stem": "Which two statements are true about managed identity in Azure AI solutions?",
+    "code": null,
+    "options": [
+      "It avoids hard-coded secrets in code",
+      "It still requires RBAC to access the target resource",
+      "It automatically disables private endpoints",
+      "It replaces all deployment quotas"
+    ],
+    "answer": "A, B",
+    "explanation": "Managed identity provides an identity, but access still depends on RBAC.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 618,
+    "section": "Plan and manage an Azure AI solution",
+    "type": "Multiple response (2 correct)",
+    "topic": "Responsible AI controls 5",
+    "stem": "Which two controls are commonly used to reduce unsafe generative output?",
+    "code": null,
+    "options": [
+      "Content safety filters",
+      "Prompt shields or guardrails",
+      "TTS voice selection",
+      "Semantic captions only"
+    ],
+    "answer": "A, B",
+    "explanation": "Safety filters and guardrails reduce harmful or policy-violating behavior.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 619,
+    "section": "Plan and manage an Azure AI solution",
+    "type": "Multiple response (2 correct)",
+    "topic": "Search monitoring 5",
+    "stem": "Which two signals help diagnose grounding issues in a RAG system?",
+    "code": null,
+    "options": [
+      "Retrieval relevance",
+      "Groundedness evaluation",
+      "Avatar frame rate",
+      "Speech synthesis duration only"
+    ],
+    "answer": "A, B",
+    "explanation": "Grounding issues are usually visible in retrieval and groundedness metrics.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 620,
+    "section": "Plan and manage an Azure AI solution",
+    "type": "Multiple response (2 correct)",
+    "topic": "Private access 5",
+    "stem": "Which two areas should be validated for a private Azure AI deployment?",
+    "code": null,
+    "options": [
+      "Private endpoints or private link paths",
+      "DNS and network resolution",
+      "Prompt length",
+      "Image generation seed"
+    ],
+    "answer": "A, B",
+    "explanation": "Private connectivity depends on endpoint plumbing and name resolution.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 621,
+    "section": "Implement generative AI and agentic solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "RAG basics 1",
+    "stem": "Which two steps are core parts of a RAG workflow?",
+    "code": null,
+    "options": [
+      "Retrieve relevant chunks",
+      "Send grounded context to the model",
+      "Choose a TTS avatar",
+      "Train a custom neural voice"
+    ],
+    "answer": "A, B",
+    "explanation": "RAG uses retrieval plus grounded prompting.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 622,
+    "section": "Implement generative AI and agentic solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Agent tools 1",
+    "stem": "Which two items belong in a tool definition?",
+    "code": null,
+    "options": [
+      "A clear function description",
+      "A parameter schema",
+      "A random image seed",
+      "A CSS theme"
+    ],
+    "answer": "A, B",
+    "explanation": "Tools need a clear contract so the model can call them correctly.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 623,
+    "section": "Implement generative AI and agentic solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Observability 1",
+    "stem": "Which two items should tracing capture in an agent workflow?",
+    "code": null,
+    "options": [
+      "Tool invocations",
+      "Model latency",
+      "Only final CSS state",
+      "Only the browser title"
+    ],
+    "answer": "A, B",
+    "explanation": "Tracing should reveal how the workflow executed and where time was spent.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 624,
+    "section": "Implement generative AI and agentic solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Structured output 1",
+    "stem": "Which two practices improve reliable JSON output?",
+    "code": null,
+    "options": [
+      "Define required fields",
+      "Validate the response against a schema",
+      "Increase temperature to 2.0",
+      "Remove application-side checks"
+    ],
+    "answer": "A, B",
+    "explanation": "Schema constraints and validation improve reliability.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 625,
+    "section": "Implement generative AI and agentic solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "RAG basics 2",
+    "stem": "Which two steps are core parts of a RAG workflow?",
+    "code": null,
+    "options": [
+      "Retrieve relevant chunks",
+      "Send grounded context to the model",
+      "Choose a TTS avatar",
+      "Train a custom neural voice"
+    ],
+    "answer": "A, B",
+    "explanation": "RAG uses retrieval plus grounded prompting.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 626,
+    "section": "Implement generative AI and agentic solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Agent tools 2",
+    "stem": "Which two items belong in a tool definition?",
+    "code": null,
+    "options": [
+      "A clear function description",
+      "A parameter schema",
+      "A random image seed",
+      "A CSS theme"
+    ],
+    "answer": "A, B",
+    "explanation": "Tools need a clear contract so the model can call them correctly.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 627,
+    "section": "Implement generative AI and agentic solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Observability 2",
+    "stem": "Which two items should tracing capture in an agent workflow?",
+    "code": null,
+    "options": [
+      "Tool invocations",
+      "Model latency",
+      "Only final CSS state",
+      "Only the browser title"
+    ],
+    "answer": "A, B",
+    "explanation": "Tracing should reveal how the workflow executed and where time was spent.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 628,
+    "section": "Implement generative AI and agentic solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Structured output 2",
+    "stem": "Which two practices improve reliable JSON output?",
+    "code": null,
+    "options": [
+      "Define required fields",
+      "Validate the response against a schema",
+      "Increase temperature to 2.0",
+      "Remove application-side checks"
+    ],
+    "answer": "A, B",
+    "explanation": "Schema constraints and validation improve reliability.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 629,
+    "section": "Implement generative AI and agentic solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "RAG basics 3",
+    "stem": "Which two steps are core parts of a RAG workflow?",
+    "code": null,
+    "options": [
+      "Retrieve relevant chunks",
+      "Send grounded context to the model",
+      "Choose a TTS avatar",
+      "Train a custom neural voice"
+    ],
+    "answer": "A, B",
+    "explanation": "RAG uses retrieval plus grounded prompting.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 630,
+    "section": "Implement generative AI and agentic solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Agent tools 3",
+    "stem": "Which two items belong in a tool definition?",
+    "code": null,
+    "options": [
+      "A clear function description",
+      "A parameter schema",
+      "A random image seed",
+      "A CSS theme"
+    ],
+    "answer": "A, B",
+    "explanation": "Tools need a clear contract so the model can call them correctly.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 631,
+    "section": "Implement generative AI and agentic solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Observability 3",
+    "stem": "Which two items should tracing capture in an agent workflow?",
+    "code": null,
+    "options": [
+      "Tool invocations",
+      "Model latency",
+      "Only final CSS state",
+      "Only the browser title"
+    ],
+    "answer": "A, B",
+    "explanation": "Tracing should reveal how the workflow executed and where time was spent.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 632,
+    "section": "Implement generative AI and agentic solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Structured output 3",
+    "stem": "Which two practices improve reliable JSON output?",
+    "code": null,
+    "options": [
+      "Define required fields",
+      "Validate the response against a schema",
+      "Increase temperature to 2.0",
+      "Remove application-side checks"
+    ],
+    "answer": "A, B",
+    "explanation": "Schema constraints and validation improve reliability.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 633,
+    "section": "Implement generative AI and agentic solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "RAG basics 4",
+    "stem": "Which two steps are core parts of a RAG workflow?",
+    "code": null,
+    "options": [
+      "Retrieve relevant chunks",
+      "Send grounded context to the model",
+      "Choose a TTS avatar",
+      "Train a custom neural voice"
+    ],
+    "answer": "A, B",
+    "explanation": "RAG uses retrieval plus grounded prompting.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 634,
+    "section": "Implement generative AI and agentic solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Agent tools 4",
+    "stem": "Which two items belong in a tool definition?",
+    "code": null,
+    "options": [
+      "A clear function description",
+      "A parameter schema",
+      "A random image seed",
+      "A CSS theme"
+    ],
+    "answer": "A, B",
+    "explanation": "Tools need a clear contract so the model can call them correctly.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 635,
+    "section": "Implement generative AI and agentic solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Observability 4",
+    "stem": "Which two items should tracing capture in an agent workflow?",
+    "code": null,
+    "options": [
+      "Tool invocations",
+      "Model latency",
+      "Only final CSS state",
+      "Only the browser title"
+    ],
+    "answer": "A, B",
+    "explanation": "Tracing should reveal how the workflow executed and where time was spent.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 636,
+    "section": "Implement generative AI and agentic solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Structured output 4",
+    "stem": "Which two practices improve reliable JSON output?",
+    "code": null,
+    "options": [
+      "Define required fields",
+      "Validate the response against a schema",
+      "Increase temperature to 2.0",
+      "Remove application-side checks"
+    ],
+    "answer": "A, B",
+    "explanation": "Schema constraints and validation improve reliability.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 637,
+    "section": "Implement generative AI and agentic solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "RAG basics 5",
+    "stem": "Which two steps are core parts of a RAG workflow?",
+    "code": null,
+    "options": [
+      "Retrieve relevant chunks",
+      "Send grounded context to the model",
+      "Choose a TTS avatar",
+      "Train a custom neural voice"
+    ],
+    "answer": "A, B",
+    "explanation": "RAG uses retrieval plus grounded prompting.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 638,
+    "section": "Implement generative AI and agentic solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Agent tools 5",
+    "stem": "Which two items belong in a tool definition?",
+    "code": null,
+    "options": [
+      "A clear function description",
+      "A parameter schema",
+      "A random image seed",
+      "A CSS theme"
+    ],
+    "answer": "A, B",
+    "explanation": "Tools need a clear contract so the model can call them correctly.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 639,
+    "section": "Implement generative AI and agentic solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Observability 5",
+    "stem": "Which two items should tracing capture in an agent workflow?",
+    "code": null,
+    "options": [
+      "Tool invocations",
+      "Model latency",
+      "Only final CSS state",
+      "Only the browser title"
+    ],
+    "answer": "A, B",
+    "explanation": "Tracing should reveal how the workflow executed and where time was spent.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 640,
+    "section": "Implement generative AI and agentic solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Structured output 5",
+    "stem": "Which two practices improve reliable JSON output?",
+    "code": null,
+    "options": [
+      "Define required fields",
+      "Validate the response against a schema",
+      "Increase temperature to 2.0",
+      "Remove application-side checks"
+    ],
+    "answer": "A, B",
+    "explanation": "Schema constraints and validation improve reliability.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 641,
+    "section": "Implement computer vision solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Multimodal safety 1",
+    "stem": "Which two risks should be considered when a model accepts images?",
+    "code": null,
+    "options": [
+      "Unsafe visual content",
+      "Indirect prompt injection through embedded text",
+      "Index freshness only",
+      "TTS cancellation only"
+    ],
+    "answer": "A, B",
+    "explanation": "Vision systems must handle harmful imagery and embedded text attacks.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 642,
+    "section": "Implement computer vision solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Accessibility 1",
+    "stem": "Which two outputs help accessibility for image-based apps?",
+    "code": null,
+    "options": [
+      "Alt text",
+      "Detailed captions",
+      "Semantic ranker scores",
+      "Quota headers"
+    ],
+    "answer": "A, B",
+    "explanation": "Accessibility relies on useful descriptions of visual content.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 643,
+    "section": "Implement computer vision solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Image editing 1",
+    "stem": "Which two tasks align with inpainting workflows?",
+    "code": null,
+    "options": [
+      "Replacing a masked object",
+      "Preserving the rest of the image",
+      "Translating speech",
+      "Extracting invoice totals"
+    ],
+    "answer": "A, B",
+    "explanation": "Inpainting edits selected regions while keeping the remaining image stable.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 644,
+    "section": "Implement computer vision solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Video understanding 1",
+    "stem": "Which two outputs are common from video analysis workflows?",
+    "code": null,
+    "options": [
+      "Transcripts",
+      "Scene or segment summaries",
+      "Vector DB credentials",
+      "RBAC role assignments"
+    ],
+    "answer": "A, B",
+    "explanation": "Video analysis commonly extracts spoken and scene-level information.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 645,
+    "section": "Implement computer vision solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Multimodal safety 2",
+    "stem": "Which two risks should be considered when a model accepts images?",
+    "code": null,
+    "options": [
+      "Unsafe visual content",
+      "Indirect prompt injection through embedded text",
+      "Index freshness only",
+      "TTS cancellation only"
+    ],
+    "answer": "A, B",
+    "explanation": "Vision systems must handle harmful imagery and embedded text attacks.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 646,
+    "section": "Implement computer vision solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Accessibility 2",
+    "stem": "Which two outputs help accessibility for image-based apps?",
+    "code": null,
+    "options": [
+      "Alt text",
+      "Detailed captions",
+      "Semantic ranker scores",
+      "Quota headers"
+    ],
+    "answer": "A, B",
+    "explanation": "Accessibility relies on useful descriptions of visual content.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 647,
+    "section": "Implement computer vision solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Image editing 2",
+    "stem": "Which two tasks align with inpainting workflows?",
+    "code": null,
+    "options": [
+      "Replacing a masked object",
+      "Preserving the rest of the image",
+      "Translating speech",
+      "Extracting invoice totals"
+    ],
+    "answer": "A, B",
+    "explanation": "Inpainting edits selected regions while keeping the remaining image stable.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 648,
+    "section": "Implement computer vision solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Video understanding 2",
+    "stem": "Which two outputs are common from video analysis workflows?",
+    "code": null,
+    "options": [
+      "Transcripts",
+      "Scene or segment summaries",
+      "Vector DB credentials",
+      "RBAC role assignments"
+    ],
+    "answer": "A, B",
+    "explanation": "Video analysis commonly extracts spoken and scene-level information.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 649,
+    "section": "Implement computer vision solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Multimodal safety 3",
+    "stem": "Which two risks should be considered when a model accepts images?",
+    "code": null,
+    "options": [
+      "Unsafe visual content",
+      "Indirect prompt injection through embedded text",
+      "Index freshness only",
+      "TTS cancellation only"
+    ],
+    "answer": "A, B",
+    "explanation": "Vision systems must handle harmful imagery and embedded text attacks.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 650,
+    "section": "Implement computer vision solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Accessibility 3",
+    "stem": "Which two outputs help accessibility for image-based apps?",
+    "code": null,
+    "options": [
+      "Alt text",
+      "Detailed captions",
+      "Semantic ranker scores",
+      "Quota headers"
+    ],
+    "answer": "A, B",
+    "explanation": "Accessibility relies on useful descriptions of visual content.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 651,
+    "section": "Implement computer vision solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Image editing 3",
+    "stem": "Which two tasks align with inpainting workflows?",
+    "code": null,
+    "options": [
+      "Replacing a masked object",
+      "Preserving the rest of the image",
+      "Translating speech",
+      "Extracting invoice totals"
+    ],
+    "answer": "A, B",
+    "explanation": "Inpainting edits selected regions while keeping the remaining image stable.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 652,
+    "section": "Implement computer vision solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Video understanding 3",
+    "stem": "Which two outputs are common from video analysis workflows?",
+    "code": null,
+    "options": [
+      "Transcripts",
+      "Scene or segment summaries",
+      "Vector DB credentials",
+      "RBAC role assignments"
+    ],
+    "answer": "A, B",
+    "explanation": "Video analysis commonly extracts spoken and scene-level information.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 653,
+    "section": "Implement computer vision solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Multimodal safety 4",
+    "stem": "Which two risks should be considered when a model accepts images?",
+    "code": null,
+    "options": [
+      "Unsafe visual content",
+      "Indirect prompt injection through embedded text",
+      "Index freshness only",
+      "TTS cancellation only"
+    ],
+    "answer": "A, B",
+    "explanation": "Vision systems must handle harmful imagery and embedded text attacks.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 654,
+    "section": "Implement computer vision solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Accessibility 4",
+    "stem": "Which two outputs help accessibility for image-based apps?",
+    "code": null,
+    "options": [
+      "Alt text",
+      "Detailed captions",
+      "Semantic ranker scores",
+      "Quota headers"
+    ],
+    "answer": "A, B",
+    "explanation": "Accessibility relies on useful descriptions of visual content.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 655,
+    "section": "Implement computer vision solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Image editing 4",
+    "stem": "Which two tasks align with inpainting workflows?",
+    "code": null,
+    "options": [
+      "Replacing a masked object",
+      "Preserving the rest of the image",
+      "Translating speech",
+      "Extracting invoice totals"
+    ],
+    "answer": "A, B",
+    "explanation": "Inpainting edits selected regions while keeping the remaining image stable.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 656,
+    "section": "Implement computer vision solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Video understanding 4",
+    "stem": "Which two outputs are common from video analysis workflows?",
+    "code": null,
+    "options": [
+      "Transcripts",
+      "Scene or segment summaries",
+      "Vector DB credentials",
+      "RBAC role assignments"
+    ],
+    "answer": "A, B",
+    "explanation": "Video analysis commonly extracts spoken and scene-level information.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 657,
+    "section": "Implement computer vision solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Multimodal safety 5",
+    "stem": "Which two risks should be considered when a model accepts images?",
+    "code": null,
+    "options": [
+      "Unsafe visual content",
+      "Indirect prompt injection through embedded text",
+      "Index freshness only",
+      "TTS cancellation only"
+    ],
+    "answer": "A, B",
+    "explanation": "Vision systems must handle harmful imagery and embedded text attacks.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 658,
+    "section": "Implement computer vision solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Accessibility 5",
+    "stem": "Which two outputs help accessibility for image-based apps?",
+    "code": null,
+    "options": [
+      "Alt text",
+      "Detailed captions",
+      "Semantic ranker scores",
+      "Quota headers"
+    ],
+    "answer": "A, B",
+    "explanation": "Accessibility relies on useful descriptions of visual content.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 659,
+    "section": "Implement computer vision solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Image editing 5",
+    "stem": "Which two tasks align with inpainting workflows?",
+    "code": null,
+    "options": [
+      "Replacing a masked object",
+      "Preserving the rest of the image",
+      "Translating speech",
+      "Extracting invoice totals"
+    ],
+    "answer": "A, B",
+    "explanation": "Inpainting edits selected regions while keeping the remaining image stable.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 660,
+    "section": "Implement computer vision solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Video understanding 5",
+    "stem": "Which two outputs are common from video analysis workflows?",
+    "code": null,
+    "options": [
+      "Transcripts",
+      "Scene or segment summaries",
+      "Vector DB credentials",
+      "RBAC role assignments"
+    ],
+    "answer": "A, B",
+    "explanation": "Video analysis commonly extracts spoken and scene-level information.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 661,
+    "section": "Implement text analysis solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Speech solutions 1",
+    "stem": "Which two capabilities are part of Azure Speech workflows?",
+    "code": null,
+    "options": [
+      "Speech to text",
+      "Text to speech",
+      "Vector filtering",
+      "Image watermarking"
+    ],
+    "answer": "A, B",
+    "explanation": "Azure Speech covers recognition and synthesis.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 662,
+    "section": "Implement text analysis solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Pronunciation assessment 1",
+    "stem": "Which two speaking qualities can pronunciation assessment help evaluate?",
+    "code": null,
+    "options": [
+      "Accuracy",
+      "Fluency",
+      "Vector similarity",
+      "OCR page count"
+    ],
+    "answer": "A, B",
+    "explanation": "Pronunciation assessment is used to score speaking performance.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 663,
+    "section": "Implement text analysis solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Translation workflows 1",
+    "stem": "Which two approaches can translate user content in AI-103 scenarios?",
+    "code": null,
+    "options": [
+      "Azure Translator for text",
+      "Speech translation for spoken input",
+      "Document layout extraction only",
+      "Image inpainting"
+    ],
+    "answer": "A, B",
+    "explanation": "Translation can happen over text or speech.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 664,
+    "section": "Implement text analysis solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Language analysis 1",
+    "stem": "Which two features are standard text-analysis tasks?",
+    "code": null,
+    "options": [
+      "Entity recognition",
+      "Sentiment analysis",
+      "Avatar rendering",
+      "Semantic hybrid search"
+    ],
+    "answer": "A, B",
+    "explanation": "Entity and sentiment analysis are classic language tasks.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 665,
+    "section": "Implement text analysis solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Speech solutions 2",
+    "stem": "Which two capabilities are part of Azure Speech workflows?",
+    "code": null,
+    "options": [
+      "Speech to text",
+      "Text to speech",
+      "Vector filtering",
+      "Image watermarking"
+    ],
+    "answer": "A, B",
+    "explanation": "Azure Speech covers recognition and synthesis.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 666,
+    "section": "Implement text analysis solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Pronunciation assessment 2",
+    "stem": "Which two speaking qualities can pronunciation assessment help evaluate?",
+    "code": null,
+    "options": [
+      "Accuracy",
+      "Fluency",
+      "Vector similarity",
+      "OCR page count"
+    ],
+    "answer": "A, B",
+    "explanation": "Pronunciation assessment is used to score speaking performance.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 667,
+    "section": "Implement text analysis solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Translation workflows 2",
+    "stem": "Which two approaches can translate user content in AI-103 scenarios?",
+    "code": null,
+    "options": [
+      "Azure Translator for text",
+      "Speech translation for spoken input",
+      "Document layout extraction only",
+      "Image inpainting"
+    ],
+    "answer": "A, B",
+    "explanation": "Translation can happen over text or speech.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 668,
+    "section": "Implement text analysis solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Language analysis 2",
+    "stem": "Which two features are standard text-analysis tasks?",
+    "code": null,
+    "options": [
+      "Entity recognition",
+      "Sentiment analysis",
+      "Avatar rendering",
+      "Semantic hybrid search"
+    ],
+    "answer": "A, B",
+    "explanation": "Entity and sentiment analysis are classic language tasks.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 669,
+    "section": "Implement text analysis solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Speech solutions 3",
+    "stem": "Which two capabilities are part of Azure Speech workflows?",
+    "code": null,
+    "options": [
+      "Speech to text",
+      "Text to speech",
+      "Vector filtering",
+      "Image watermarking"
+    ],
+    "answer": "A, B",
+    "explanation": "Azure Speech covers recognition and synthesis.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 670,
+    "section": "Implement text analysis solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Pronunciation assessment 3",
+    "stem": "Which two speaking qualities can pronunciation assessment help evaluate?",
+    "code": null,
+    "options": [
+      "Accuracy",
+      "Fluency",
+      "Vector similarity",
+      "OCR page count"
+    ],
+    "answer": "A, B",
+    "explanation": "Pronunciation assessment is used to score speaking performance.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 671,
+    "section": "Implement text analysis solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Translation workflows 3",
+    "stem": "Which two approaches can translate user content in AI-103 scenarios?",
+    "code": null,
+    "options": [
+      "Azure Translator for text",
+      "Speech translation for spoken input",
+      "Document layout extraction only",
+      "Image inpainting"
+    ],
+    "answer": "A, B",
+    "explanation": "Translation can happen over text or speech.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 672,
+    "section": "Implement text analysis solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Language analysis 3",
+    "stem": "Which two features are standard text-analysis tasks?",
+    "code": null,
+    "options": [
+      "Entity recognition",
+      "Sentiment analysis",
+      "Avatar rendering",
+      "Semantic hybrid search"
+    ],
+    "answer": "A, B",
+    "explanation": "Entity and sentiment analysis are classic language tasks.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 673,
+    "section": "Implement text analysis solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Speech solutions 4",
+    "stem": "Which two capabilities are part of Azure Speech workflows?",
+    "code": null,
+    "options": [
+      "Speech to text",
+      "Text to speech",
+      "Vector filtering",
+      "Image watermarking"
+    ],
+    "answer": "A, B",
+    "explanation": "Azure Speech covers recognition and synthesis.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 674,
+    "section": "Implement text analysis solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Pronunciation assessment 4",
+    "stem": "Which two speaking qualities can pronunciation assessment help evaluate?",
+    "code": null,
+    "options": [
+      "Accuracy",
+      "Fluency",
+      "Vector similarity",
+      "OCR page count"
+    ],
+    "answer": "A, B",
+    "explanation": "Pronunciation assessment is used to score speaking performance.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 675,
+    "section": "Implement text analysis solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Translation workflows 4",
+    "stem": "Which two approaches can translate user content in AI-103 scenarios?",
+    "code": null,
+    "options": [
+      "Azure Translator for text",
+      "Speech translation for spoken input",
+      "Document layout extraction only",
+      "Image inpainting"
+    ],
+    "answer": "A, B",
+    "explanation": "Translation can happen over text or speech.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 676,
+    "section": "Implement text analysis solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Language analysis 4",
+    "stem": "Which two features are standard text-analysis tasks?",
+    "code": null,
+    "options": [
+      "Entity recognition",
+      "Sentiment analysis",
+      "Avatar rendering",
+      "Semantic hybrid search"
+    ],
+    "answer": "A, B",
+    "explanation": "Entity and sentiment analysis are classic language tasks.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 677,
+    "section": "Implement text analysis solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Speech solutions 5",
+    "stem": "Which two capabilities are part of Azure Speech workflows?",
+    "code": null,
+    "options": [
+      "Speech to text",
+      "Text to speech",
+      "Vector filtering",
+      "Image watermarking"
+    ],
+    "answer": "A, B",
+    "explanation": "Azure Speech covers recognition and synthesis.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 678,
+    "section": "Implement text analysis solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Pronunciation assessment 5",
+    "stem": "Which two speaking qualities can pronunciation assessment help evaluate?",
+    "code": null,
+    "options": [
+      "Accuracy",
+      "Fluency",
+      "Vector similarity",
+      "OCR page count"
+    ],
+    "answer": "A, B",
+    "explanation": "Pronunciation assessment is used to score speaking performance.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 679,
+    "section": "Implement text analysis solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Translation workflows 5",
+    "stem": "Which two approaches can translate user content in AI-103 scenarios?",
+    "code": null,
+    "options": [
+      "Azure Translator for text",
+      "Speech translation for spoken input",
+      "Document layout extraction only",
+      "Image inpainting"
+    ],
+    "answer": "A, B",
+    "explanation": "Translation can happen over text or speech.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 680,
+    "section": "Implement text analysis solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Language analysis 5",
+    "stem": "Which two features are standard text-analysis tasks?",
+    "code": null,
+    "options": [
+      "Entity recognition",
+      "Sentiment analysis",
+      "Avatar rendering",
+      "Semantic hybrid search"
+    ],
+    "answer": "A, B",
+    "explanation": "Entity and sentiment analysis are classic language tasks.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 681,
+    "section": "Implement information extraction solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Index content 1",
+    "stem": "Which two pieces of data should usually be stored for grounded retrieval?",
+    "code": null,
+    "options": [
+      "Chunk text",
+      "Source metadata for citation",
+      "Only TTS voice names",
+      "Only image seeds"
+    ],
+    "answer": "A, B",
+    "explanation": "Retrieval needs text plus metadata.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 682,
+    "section": "Implement information extraction solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Retrieval methods 1",
+    "stem": "Which two search modes are commonly combined in AI-103 retrieval scenarios?",
+    "code": null,
+    "options": [
+      "Keyword search",
+      "Vector search",
+      "Speech synthesis",
+      "Image generation"
+    ],
+    "answer": "A, B",
+    "explanation": "Hybrid retrieval combines keyword and vector search.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 683,
+    "section": "Implement information extraction solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Document extraction 1",
+    "stem": "Which two steps are common when indexing scanned PDFs?",
+    "code": null,
+    "options": [
+      "OCR",
+      "Chunking",
+      "Speech translation",
+      "Code interpreter only"
+    ],
+    "answer": "A, B",
+    "explanation": "Scanned documents usually need OCR before chunking and indexing.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 684,
+    "section": "Implement information extraction solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Extraction outputs 1",
+    "stem": "Which two outputs are useful for downstream RAG or agents?",
+    "code": null,
+    "options": [
+      "Structured fields",
+      "Markdown or layout-aware text",
+      "Random voice IDs",
+      "CSS tokens"
+    ],
+    "answer": "A, B",
+    "explanation": "Structured and layout-preserving outputs improve downstream use.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 685,
+    "section": "Implement information extraction solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Index content 2",
+    "stem": "Which two pieces of data should usually be stored for grounded retrieval?",
+    "code": null,
+    "options": [
+      "Chunk text",
+      "Source metadata for citation",
+      "Only TTS voice names",
+      "Only image seeds"
+    ],
+    "answer": "A, B",
+    "explanation": "Retrieval needs text plus metadata.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 686,
+    "section": "Implement information extraction solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Retrieval methods 2",
+    "stem": "Which two search modes are commonly combined in AI-103 retrieval scenarios?",
+    "code": null,
+    "options": [
+      "Keyword search",
+      "Vector search",
+      "Speech synthesis",
+      "Image generation"
+    ],
+    "answer": "A, B",
+    "explanation": "Hybrid retrieval combines keyword and vector search.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 687,
+    "section": "Implement information extraction solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Document extraction 2",
+    "stem": "Which two steps are common when indexing scanned PDFs?",
+    "code": null,
+    "options": [
+      "OCR",
+      "Chunking",
+      "Speech translation",
+      "Code interpreter only"
+    ],
+    "answer": "A, B",
+    "explanation": "Scanned documents usually need OCR before chunking and indexing.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 688,
+    "section": "Implement information extraction solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Extraction outputs 2",
+    "stem": "Which two outputs are useful for downstream RAG or agents?",
+    "code": null,
+    "options": [
+      "Structured fields",
+      "Markdown or layout-aware text",
+      "Random voice IDs",
+      "CSS tokens"
+    ],
+    "answer": "A, B",
+    "explanation": "Structured and layout-preserving outputs improve downstream use.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 689,
+    "section": "Implement information extraction solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Index content 3",
+    "stem": "Which two pieces of data should usually be stored for grounded retrieval?",
+    "code": null,
+    "options": [
+      "Chunk text",
+      "Source metadata for citation",
+      "Only TTS voice names",
+      "Only image seeds"
+    ],
+    "answer": "A, B",
+    "explanation": "Retrieval needs text plus metadata.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 690,
+    "section": "Implement information extraction solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Retrieval methods 3",
+    "stem": "Which two search modes are commonly combined in AI-103 retrieval scenarios?",
+    "code": null,
+    "options": [
+      "Keyword search",
+      "Vector search",
+      "Speech synthesis",
+      "Image generation"
+    ],
+    "answer": "A, B",
+    "explanation": "Hybrid retrieval combines keyword and vector search.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 691,
+    "section": "Implement information extraction solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Document extraction 3",
+    "stem": "Which two steps are common when indexing scanned PDFs?",
+    "code": null,
+    "options": [
+      "OCR",
+      "Chunking",
+      "Speech translation",
+      "Code interpreter only"
+    ],
+    "answer": "A, B",
+    "explanation": "Scanned documents usually need OCR before chunking and indexing.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 692,
+    "section": "Implement information extraction solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Extraction outputs 3",
+    "stem": "Which two outputs are useful for downstream RAG or agents?",
+    "code": null,
+    "options": [
+      "Structured fields",
+      "Markdown or layout-aware text",
+      "Random voice IDs",
+      "CSS tokens"
+    ],
+    "answer": "A, B",
+    "explanation": "Structured and layout-preserving outputs improve downstream use.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 693,
+    "section": "Implement information extraction solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Index content 4",
+    "stem": "Which two pieces of data should usually be stored for grounded retrieval?",
+    "code": null,
+    "options": [
+      "Chunk text",
+      "Source metadata for citation",
+      "Only TTS voice names",
+      "Only image seeds"
+    ],
+    "answer": "A, B",
+    "explanation": "Retrieval needs text plus metadata.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 694,
+    "section": "Implement information extraction solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Retrieval methods 4",
+    "stem": "Which two search modes are commonly combined in AI-103 retrieval scenarios?",
+    "code": null,
+    "options": [
+      "Keyword search",
+      "Vector search",
+      "Speech synthesis",
+      "Image generation"
+    ],
+    "answer": "A, B",
+    "explanation": "Hybrid retrieval combines keyword and vector search.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 695,
+    "section": "Implement information extraction solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Document extraction 4",
+    "stem": "Which two steps are common when indexing scanned PDFs?",
+    "code": null,
+    "options": [
+      "OCR",
+      "Chunking",
+      "Speech translation",
+      "Code interpreter only"
+    ],
+    "answer": "A, B",
+    "explanation": "Scanned documents usually need OCR before chunking and indexing.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 696,
+    "section": "Implement information extraction solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Extraction outputs 4",
+    "stem": "Which two outputs are useful for downstream RAG or agents?",
+    "code": null,
+    "options": [
+      "Structured fields",
+      "Markdown or layout-aware text",
+      "Random voice IDs",
+      "CSS tokens"
+    ],
+    "answer": "A, B",
+    "explanation": "Structured and layout-preserving outputs improve downstream use.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 697,
+    "section": "Implement information extraction solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Index content 5",
+    "stem": "Which two pieces of data should usually be stored for grounded retrieval?",
+    "code": null,
+    "options": [
+      "Chunk text",
+      "Source metadata for citation",
+      "Only TTS voice names",
+      "Only image seeds"
+    ],
+    "answer": "A, B",
+    "explanation": "Retrieval needs text plus metadata.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 698,
+    "section": "Implement information extraction solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Retrieval methods 5",
+    "stem": "Which two search modes are commonly combined in AI-103 retrieval scenarios?",
+    "code": null,
+    "options": [
+      "Keyword search",
+      "Vector search",
+      "Speech synthesis",
+      "Image generation"
+    ],
+    "answer": "A, B",
+    "explanation": "Hybrid retrieval combines keyword and vector search.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 699,
+    "section": "Implement information extraction solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Document extraction 5",
+    "stem": "Which two steps are common when indexing scanned PDFs?",
+    "code": null,
+    "options": [
+      "OCR",
+      "Chunking",
+      "Speech translation",
+      "Code interpreter only"
+    ],
+    "answer": "A, B",
+    "explanation": "Scanned documents usually need OCR before chunking and indexing.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 700,
+    "section": "Implement information extraction solutions",
+    "type": "Multiple response (2 correct)",
+    "topic": "Extraction outputs 5",
+    "stem": "Which two outputs are useful for downstream RAG or agents?",
+    "code": null,
+    "options": [
+      "Structured fields",
+      "Markdown or layout-aware text",
+      "Random voice IDs",
+      "CSS tokens"
+    ],
+    "answer": "A, B",
+    "explanation": "Structured and layout-preserving outputs improve downstream use.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 701,
+    "section": "Plan and manage an Azure AI solution",
+    "type": "Dropdown choice",
+    "topic": "Authentication basics 1",
+    "stem": "Choose the best term for each blank. To avoid hard-coded secrets in Azure, use [[drop1]]. To grant that identity access to an Azure AI resource, configure [[drop2]].",
+    "code": null,
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "DefaultAzureCredential",
+          "Image generation",
+          "SpeechConfig",
+          "Semantic captions"
+        ],
+        "correctAnswer": "DefaultAzureCredential",
+        "explanation": "DefaultAzureCredential is the Azure Identity entry point for keyless authentication."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "RBAC",
+          "SSML",
+          "Vision Studio",
+          "Top K only"
+        ],
+        "correctAnswer": "RBAC",
+        "explanation": "RBAC controls what the identity can do on the target resource."
+      }
+    ],
+    "answer": "DefaultAzureCredential, RBAC",
+    "explanation": "The first blank is about identity creation and the second is about authorization.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 702,
+    "section": "Implement generative AI and agentic solutions",
+    "type": "Dropdown choice",
+    "topic": "RAG sequence 1",
+    "stem": "Complete the retrieval statement. A grounded answer usually retrieves [[drop1]] from the index and then sends that context to [[drop2]].",
+    "code": null,
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "relevant chunks",
+          "voice avatars",
+          "private endpoints",
+          "audio speakers"
+        ],
+        "correctAnswer": "relevant chunks",
+        "explanation": "RAG retrieves relevant chunks or passages from the index."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "the model",
+          "the CSS renderer",
+          "the DNS zone",
+          "the RBAC portal"
+        ],
+        "correctAnswer": "the model",
+        "explanation": "The retrieved context is supplied to the model for grounded generation."
+      }
+    ],
+    "answer": "relevant chunks, the model",
+    "explanation": "RAG retrieves relevant content and passes it to the model.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 703,
+    "section": "Implement generative AI and agentic solutions",
+    "type": "Dropdown choice",
+    "topic": "Structured output code 1",
+    "stem": "Complete the code to request structured JSON output. Fill the blanks in the snippet below.",
+    "code": "request = {\n    \"[[drop2]]\": {\n        \"type\": \"[[drop1]]\"\n    }\n}",
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "json_object",
+          "image",
+          "binary",
+          "markdown"
+        ],
+        "correctAnswer": "json_object",
+        "explanation": "json_object is the structured output choice in this simplified simulator item."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "response_format",
+          "voice_name",
+          "indexer_name",
+          "semantic_ranker"
+        ],
+        "correctAnswer": "response_format",
+        "explanation": "The request property is response_format in this example."
+      }
+    ],
+    "answer": "json_object, response_format",
+    "explanation": "The request config uses response_format with type json_object.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 704,
+    "section": "Implement computer vision solutions",
+    "type": "Dropdown choice",
+    "topic": "Multimodal inputs 1",
+    "stem": "Complete the multimodal prompt pattern. A multimodal chat message often includes a [[drop1]] item for the user’s question and an [[drop2]] item for the visual input.",
+    "code": null,
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "text",
+          "vector_query",
+          "audio_config",
+          "indexer"
+        ],
+        "correctAnswer": "text",
+        "explanation": "The user question is usually represented as text content."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "image_url",
+          "rbac_role",
+          "skillset",
+          "voice_profile"
+        ],
+        "correctAnswer": "image_url",
+        "explanation": "Visual input is commonly passed via image_url content."
+      }
+    ],
+    "answer": "text, image_url",
+    "explanation": "Multimodal prompts combine text with image input.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 705,
+    "section": "Implement text analysis solutions",
+    "type": "Dropdown choice",
+    "topic": "Speech SDK code 1",
+    "stem": "Complete the Azure Speech code. Fill the blanks in the snippet below.",
+    "code": "recognizer = speechsdk.[[drop1]](speech_config=speech_config)\nresult = recognizer.[[drop2]]().get()",
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "SpeechRecognizer",
+          "SearchClient",
+          "DocumentIntelligenceClient",
+          "VectorizedQuery"
+        ],
+        "correctAnswer": "SpeechRecognizer",
+        "explanation": "SpeechRecognizer is used for recognition."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "recognize_once_async",
+          "speak_text_async",
+          "begin_analyze_document",
+          "search"
+        ],
+        "correctAnswer": "recognize_once_async",
+        "explanation": "recognize_once_async performs one-shot recognition."
+      }
+    ],
+    "answer": "SpeechRecognizer, recognize_once_async",
+    "explanation": "The recognizer object performs one-shot speech recognition with recognize_once_async.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 706,
+    "section": "Implement information extraction solutions",
+    "type": "Dropdown choice",
+    "topic": "Search concepts 1",
+    "stem": "Complete the search concepts statement. An Azure AI Search [[drop1]] stores searchable content. An [[drop2]] pulls data from a supported source on a schedule.",
+    "code": null,
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "index",
+          "voice",
+          "model deployment",
+          "avatar"
+        ],
+        "correctAnswer": "index",
+        "explanation": "The index stores searchable content."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "indexer",
+          "prompt shield",
+          "speaker profile",
+          "webhook"
+        ],
+        "correctAnswer": "indexer",
+        "explanation": "An indexer pulls and loads content from a source."
+      }
+    ],
+    "answer": "index, indexer",
+    "explanation": "The index stores content and the indexer imports it.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 707,
+    "section": "Plan and manage an Azure AI solution",
+    "type": "Dropdown choice",
+    "topic": "Authentication basics 2",
+    "stem": "Choose the best term for each blank. To avoid hard-coded secrets in Azure, use [[drop1]]. To grant that identity access to an Azure AI resource, configure [[drop2]].",
+    "code": null,
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "Image generation",
+          "SpeechConfig",
+          "Semantic captions",
+          "DefaultAzureCredential"
+        ],
+        "correctAnswer": "DefaultAzureCredential",
+        "explanation": "DefaultAzureCredential is the Azure Identity entry point for keyless authentication."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "SSML",
+          "Vision Studio",
+          "Top K only",
+          "RBAC"
+        ],
+        "correctAnswer": "RBAC",
+        "explanation": "RBAC controls what the identity can do on the target resource."
+      }
+    ],
+    "answer": "DefaultAzureCredential, RBAC",
+    "explanation": "The first blank is about identity creation and the second is about authorization.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 708,
+    "section": "Implement generative AI and agentic solutions",
+    "type": "Dropdown choice",
+    "topic": "RAG sequence 2",
+    "stem": "Complete the retrieval statement. A grounded answer usually retrieves [[drop1]] from the index and then sends that context to [[drop2]].",
+    "code": null,
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "voice avatars",
+          "private endpoints",
+          "audio speakers",
+          "relevant chunks"
+        ],
+        "correctAnswer": "relevant chunks",
+        "explanation": "RAG retrieves relevant chunks or passages from the index."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "the CSS renderer",
+          "the DNS zone",
+          "the RBAC portal",
+          "the model"
+        ],
+        "correctAnswer": "the model",
+        "explanation": "The retrieved context is supplied to the model for grounded generation."
+      }
+    ],
+    "answer": "relevant chunks, the model",
+    "explanation": "RAG retrieves relevant content and passes it to the model.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 709,
+    "section": "Implement generative AI and agentic solutions",
+    "type": "Dropdown choice",
+    "topic": "Structured output code 2",
+    "stem": "Complete the code to request structured JSON output. Fill the blanks in the snippet below.",
+    "code": "request = {\n    \"[[drop2]]\": {\n        \"type\": \"[[drop1]]\"\n    }\n}",
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "image",
+          "binary",
+          "markdown",
+          "json_object"
+        ],
+        "correctAnswer": "json_object",
+        "explanation": "json_object is the structured output choice in this simplified simulator item."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "voice_name",
+          "indexer_name",
+          "semantic_ranker",
+          "response_format"
+        ],
+        "correctAnswer": "response_format",
+        "explanation": "The request property is response_format in this example."
+      }
+    ],
+    "answer": "json_object, response_format",
+    "explanation": "The request config uses response_format with type json_object.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 710,
+    "section": "Implement computer vision solutions",
+    "type": "Dropdown choice",
+    "topic": "Multimodal inputs 2",
+    "stem": "Complete the multimodal prompt pattern. A multimodal chat message often includes a [[drop1]] item for the user’s question and an [[drop2]] item for the visual input.",
+    "code": null,
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "vector_query",
+          "audio_config",
+          "indexer",
+          "text"
+        ],
+        "correctAnswer": "text",
+        "explanation": "The user question is usually represented as text content."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "rbac_role",
+          "skillset",
+          "voice_profile",
+          "image_url"
+        ],
+        "correctAnswer": "image_url",
+        "explanation": "Visual input is commonly passed via image_url content."
+      }
+    ],
+    "answer": "text, image_url",
+    "explanation": "Multimodal prompts combine text with image input.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 711,
+    "section": "Implement text analysis solutions",
+    "type": "Dropdown choice",
+    "topic": "Speech SDK code 2",
+    "stem": "Complete the Azure Speech code. Fill the blanks in the snippet below.",
+    "code": "recognizer = speechsdk.[[drop1]](speech_config=speech_config)\nresult = recognizer.[[drop2]]().get()",
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "SearchClient",
+          "DocumentIntelligenceClient",
+          "VectorizedQuery",
+          "SpeechRecognizer"
+        ],
+        "correctAnswer": "SpeechRecognizer",
+        "explanation": "SpeechRecognizer is used for recognition."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "speak_text_async",
+          "begin_analyze_document",
+          "search",
+          "recognize_once_async"
+        ],
+        "correctAnswer": "recognize_once_async",
+        "explanation": "recognize_once_async performs one-shot recognition."
+      }
+    ],
+    "answer": "SpeechRecognizer, recognize_once_async",
+    "explanation": "The recognizer object performs one-shot speech recognition with recognize_once_async.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 712,
+    "section": "Implement information extraction solutions",
+    "type": "Dropdown choice",
+    "topic": "Search concepts 2",
+    "stem": "Complete the search concepts statement. An Azure AI Search [[drop1]] stores searchable content. An [[drop2]] pulls data from a supported source on a schedule.",
+    "code": null,
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "voice",
+          "model deployment",
+          "avatar",
+          "index"
+        ],
+        "correctAnswer": "index",
+        "explanation": "The index stores searchable content."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "prompt shield",
+          "speaker profile",
+          "webhook",
+          "indexer"
+        ],
+        "correctAnswer": "indexer",
+        "explanation": "An indexer pulls and loads content from a source."
+      }
+    ],
+    "answer": "index, indexer",
+    "explanation": "The index stores content and the indexer imports it.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 713,
+    "section": "Plan and manage an Azure AI solution",
+    "type": "Dropdown choice",
+    "topic": "Authentication basics 3",
+    "stem": "Choose the best term for each blank. To avoid hard-coded secrets in Azure, use [[drop1]]. To grant that identity access to an Azure AI resource, configure [[drop2]].",
+    "code": null,
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "DefaultAzureCredential",
+          "Image generation",
+          "SpeechConfig",
+          "Semantic captions"
+        ],
+        "correctAnswer": "DefaultAzureCredential",
+        "explanation": "DefaultAzureCredential is the Azure Identity entry point for keyless authentication."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "RBAC",
+          "SSML",
+          "Vision Studio",
+          "Top K only"
+        ],
+        "correctAnswer": "RBAC",
+        "explanation": "RBAC controls what the identity can do on the target resource."
+      }
+    ],
+    "answer": "DefaultAzureCredential, RBAC",
+    "explanation": "The first blank is about identity creation and the second is about authorization.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 714,
+    "section": "Implement generative AI and agentic solutions",
+    "type": "Dropdown choice",
+    "topic": "RAG sequence 3",
+    "stem": "Complete the retrieval statement. A grounded answer usually retrieves [[drop1]] from the index and then sends that context to [[drop2]].",
+    "code": null,
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "relevant chunks",
+          "voice avatars",
+          "private endpoints",
+          "audio speakers"
+        ],
+        "correctAnswer": "relevant chunks",
+        "explanation": "RAG retrieves relevant chunks or passages from the index."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "the model",
+          "the CSS renderer",
+          "the DNS zone",
+          "the RBAC portal"
+        ],
+        "correctAnswer": "the model",
+        "explanation": "The retrieved context is supplied to the model for grounded generation."
+      }
+    ],
+    "answer": "relevant chunks, the model",
+    "explanation": "RAG retrieves relevant content and passes it to the model.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 715,
+    "section": "Implement generative AI and agentic solutions",
+    "type": "Dropdown choice",
+    "topic": "Structured output code 3",
+    "stem": "Complete the code to request structured JSON output. Fill the blanks in the snippet below.",
+    "code": "request = {\n    \"[[drop2]]\": {\n        \"type\": \"[[drop1]]\"\n    }\n}",
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "json_object",
+          "image",
+          "binary",
+          "markdown"
+        ],
+        "correctAnswer": "json_object",
+        "explanation": "json_object is the structured output choice in this simplified simulator item."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "response_format",
+          "voice_name",
+          "indexer_name",
+          "semantic_ranker"
+        ],
+        "correctAnswer": "response_format",
+        "explanation": "The request property is response_format in this example."
+      }
+    ],
+    "answer": "json_object, response_format",
+    "explanation": "The request config uses response_format with type json_object.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 716,
+    "section": "Implement computer vision solutions",
+    "type": "Dropdown choice",
+    "topic": "Multimodal inputs 3",
+    "stem": "Complete the multimodal prompt pattern. A multimodal chat message often includes a [[drop1]] item for the user’s question and an [[drop2]] item for the visual input.",
+    "code": null,
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "text",
+          "vector_query",
+          "audio_config",
+          "indexer"
+        ],
+        "correctAnswer": "text",
+        "explanation": "The user question is usually represented as text content."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "image_url",
+          "rbac_role",
+          "skillset",
+          "voice_profile"
+        ],
+        "correctAnswer": "image_url",
+        "explanation": "Visual input is commonly passed via image_url content."
+      }
+    ],
+    "answer": "text, image_url",
+    "explanation": "Multimodal prompts combine text with image input.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 717,
+    "section": "Implement text analysis solutions",
+    "type": "Dropdown choice",
+    "topic": "Speech SDK code 3",
+    "stem": "Complete the Azure Speech code. Fill the blanks in the snippet below.",
+    "code": "recognizer = speechsdk.[[drop1]](speech_config=speech_config)\nresult = recognizer.[[drop2]]().get()",
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "SpeechRecognizer",
+          "SearchClient",
+          "DocumentIntelligenceClient",
+          "VectorizedQuery"
+        ],
+        "correctAnswer": "SpeechRecognizer",
+        "explanation": "SpeechRecognizer is used for recognition."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "recognize_once_async",
+          "speak_text_async",
+          "begin_analyze_document",
+          "search"
+        ],
+        "correctAnswer": "recognize_once_async",
+        "explanation": "recognize_once_async performs one-shot recognition."
+      }
+    ],
+    "answer": "SpeechRecognizer, recognize_once_async",
+    "explanation": "The recognizer object performs one-shot speech recognition with recognize_once_async.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 718,
+    "section": "Implement information extraction solutions",
+    "type": "Dropdown choice",
+    "topic": "Search concepts 3",
+    "stem": "Complete the search concepts statement. An Azure AI Search [[drop1]] stores searchable content. An [[drop2]] pulls data from a supported source on a schedule.",
+    "code": null,
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "index",
+          "voice",
+          "model deployment",
+          "avatar"
+        ],
+        "correctAnswer": "index",
+        "explanation": "The index stores searchable content."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "indexer",
+          "prompt shield",
+          "speaker profile",
+          "webhook"
+        ],
+        "correctAnswer": "indexer",
+        "explanation": "An indexer pulls and loads content from a source."
+      }
+    ],
+    "answer": "index, indexer",
+    "explanation": "The index stores content and the indexer imports it.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 719,
+    "section": "Plan and manage an Azure AI solution",
+    "type": "Dropdown choice",
+    "topic": "Authentication basics 4",
+    "stem": "Choose the best term for each blank. To avoid hard-coded secrets in Azure, use [[drop1]]. To grant that identity access to an Azure AI resource, configure [[drop2]].",
+    "code": null,
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "Image generation",
+          "SpeechConfig",
+          "Semantic captions",
+          "DefaultAzureCredential"
+        ],
+        "correctAnswer": "DefaultAzureCredential",
+        "explanation": "DefaultAzureCredential is the Azure Identity entry point for keyless authentication."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "SSML",
+          "Vision Studio",
+          "Top K only",
+          "RBAC"
+        ],
+        "correctAnswer": "RBAC",
+        "explanation": "RBAC controls what the identity can do on the target resource."
+      }
+    ],
+    "answer": "DefaultAzureCredential, RBAC",
+    "explanation": "The first blank is about identity creation and the second is about authorization.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 720,
+    "section": "Implement generative AI and agentic solutions",
+    "type": "Dropdown choice",
+    "topic": "RAG sequence 4",
+    "stem": "Complete the retrieval statement. A grounded answer usually retrieves [[drop1]] from the index and then sends that context to [[drop2]].",
+    "code": null,
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "voice avatars",
+          "private endpoints",
+          "audio speakers",
+          "relevant chunks"
+        ],
+        "correctAnswer": "relevant chunks",
+        "explanation": "RAG retrieves relevant chunks or passages from the index."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "the CSS renderer",
+          "the DNS zone",
+          "the RBAC portal",
+          "the model"
+        ],
+        "correctAnswer": "the model",
+        "explanation": "The retrieved context is supplied to the model for grounded generation."
+      }
+    ],
+    "answer": "relevant chunks, the model",
+    "explanation": "RAG retrieves relevant content and passes it to the model.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 721,
+    "section": "Implement generative AI and agentic solutions",
+    "type": "Dropdown choice",
+    "topic": "Structured output code 4",
+    "stem": "Complete the code to request structured JSON output. Fill the blanks in the snippet below.",
+    "code": "request = {\n    \"[[drop2]]\": {\n        \"type\": \"[[drop1]]\"\n    }\n}",
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "image",
+          "binary",
+          "markdown",
+          "json_object"
+        ],
+        "correctAnswer": "json_object",
+        "explanation": "json_object is the structured output choice in this simplified simulator item."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "voice_name",
+          "indexer_name",
+          "semantic_ranker",
+          "response_format"
+        ],
+        "correctAnswer": "response_format",
+        "explanation": "The request property is response_format in this example."
+      }
+    ],
+    "answer": "json_object, response_format",
+    "explanation": "The request config uses response_format with type json_object.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 722,
+    "section": "Implement computer vision solutions",
+    "type": "Dropdown choice",
+    "topic": "Multimodal inputs 4",
+    "stem": "Complete the multimodal prompt pattern. A multimodal chat message often includes a [[drop1]] item for the user’s question and an [[drop2]] item for the visual input.",
+    "code": null,
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "vector_query",
+          "audio_config",
+          "indexer",
+          "text"
+        ],
+        "correctAnswer": "text",
+        "explanation": "The user question is usually represented as text content."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "rbac_role",
+          "skillset",
+          "voice_profile",
+          "image_url"
+        ],
+        "correctAnswer": "image_url",
+        "explanation": "Visual input is commonly passed via image_url content."
+      }
+    ],
+    "answer": "text, image_url",
+    "explanation": "Multimodal prompts combine text with image input.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 723,
+    "section": "Implement text analysis solutions",
+    "type": "Dropdown choice",
+    "topic": "Speech SDK code 4",
+    "stem": "Complete the Azure Speech code. Fill the blanks in the snippet below.",
+    "code": "recognizer = speechsdk.[[drop1]](speech_config=speech_config)\nresult = recognizer.[[drop2]]().get()",
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "SearchClient",
+          "DocumentIntelligenceClient",
+          "VectorizedQuery",
+          "SpeechRecognizer"
+        ],
+        "correctAnswer": "SpeechRecognizer",
+        "explanation": "SpeechRecognizer is used for recognition."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "speak_text_async",
+          "begin_analyze_document",
+          "search",
+          "recognize_once_async"
+        ],
+        "correctAnswer": "recognize_once_async",
+        "explanation": "recognize_once_async performs one-shot recognition."
+      }
+    ],
+    "answer": "SpeechRecognizer, recognize_once_async",
+    "explanation": "The recognizer object performs one-shot speech recognition with recognize_once_async.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 724,
+    "section": "Implement information extraction solutions",
+    "type": "Dropdown choice",
+    "topic": "Search concepts 4",
+    "stem": "Complete the search concepts statement. An Azure AI Search [[drop1]] stores searchable content. An [[drop2]] pulls data from a supported source on a schedule.",
+    "code": null,
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "voice",
+          "model deployment",
+          "avatar",
+          "index"
+        ],
+        "correctAnswer": "index",
+        "explanation": "The index stores searchable content."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "prompt shield",
+          "speaker profile",
+          "webhook",
+          "indexer"
+        ],
+        "correctAnswer": "indexer",
+        "explanation": "An indexer pulls and loads content from a source."
+      }
+    ],
+    "answer": "index, indexer",
+    "explanation": "The index stores content and the indexer imports it.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 725,
+    "section": "Plan and manage an Azure AI solution",
+    "type": "Dropdown choice",
+    "topic": "Authentication basics 5",
+    "stem": "Choose the best term for each blank. To avoid hard-coded secrets in Azure, use [[drop1]]. To grant that identity access to an Azure AI resource, configure [[drop2]].",
+    "code": null,
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "DefaultAzureCredential",
+          "Image generation",
+          "SpeechConfig",
+          "Semantic captions"
+        ],
+        "correctAnswer": "DefaultAzureCredential",
+        "explanation": "DefaultAzureCredential is the Azure Identity entry point for keyless authentication."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "RBAC",
+          "SSML",
+          "Vision Studio",
+          "Top K only"
+        ],
+        "correctAnswer": "RBAC",
+        "explanation": "RBAC controls what the identity can do on the target resource."
+      }
+    ],
+    "answer": "DefaultAzureCredential, RBAC",
+    "explanation": "The first blank is about identity creation and the second is about authorization.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 726,
+    "section": "Implement generative AI and agentic solutions",
+    "type": "Dropdown choice",
+    "topic": "RAG sequence 5",
+    "stem": "Complete the retrieval statement. A grounded answer usually retrieves [[drop1]] from the index and then sends that context to [[drop2]].",
+    "code": null,
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "relevant chunks",
+          "voice avatars",
+          "private endpoints",
+          "audio speakers"
+        ],
+        "correctAnswer": "relevant chunks",
+        "explanation": "RAG retrieves relevant chunks or passages from the index."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "the model",
+          "the CSS renderer",
+          "the DNS zone",
+          "the RBAC portal"
+        ],
+        "correctAnswer": "the model",
+        "explanation": "The retrieved context is supplied to the model for grounded generation."
+      }
+    ],
+    "answer": "relevant chunks, the model",
+    "explanation": "RAG retrieves relevant content and passes it to the model.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 727,
+    "section": "Implement generative AI and agentic solutions",
+    "type": "Dropdown choice",
+    "topic": "Structured output code 5",
+    "stem": "Complete the code to request structured JSON output. Fill the blanks in the snippet below.",
+    "code": "request = {\n    \"[[drop2]]\": {\n        \"type\": \"[[drop1]]\"\n    }\n}",
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "json_object",
+          "image",
+          "binary",
+          "markdown"
+        ],
+        "correctAnswer": "json_object",
+        "explanation": "json_object is the structured output choice in this simplified simulator item."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "response_format",
+          "voice_name",
+          "indexer_name",
+          "semantic_ranker"
+        ],
+        "correctAnswer": "response_format",
+        "explanation": "The request property is response_format in this example."
+      }
+    ],
+    "answer": "json_object, response_format",
+    "explanation": "The request config uses response_format with type json_object.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 728,
+    "section": "Implement computer vision solutions",
+    "type": "Dropdown choice",
+    "topic": "Multimodal inputs 5",
+    "stem": "Complete the multimodal prompt pattern. A multimodal chat message often includes a [[drop1]] item for the user’s question and an [[drop2]] item for the visual input.",
+    "code": null,
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "text",
+          "vector_query",
+          "audio_config",
+          "indexer"
+        ],
+        "correctAnswer": "text",
+        "explanation": "The user question is usually represented as text content."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "image_url",
+          "rbac_role",
+          "skillset",
+          "voice_profile"
+        ],
+        "correctAnswer": "image_url",
+        "explanation": "Visual input is commonly passed via image_url content."
+      }
+    ],
+    "answer": "text, image_url",
+    "explanation": "Multimodal prompts combine text with image input.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 729,
+    "section": "Implement text analysis solutions",
+    "type": "Dropdown choice",
+    "topic": "Speech SDK code 5",
+    "stem": "Complete the Azure Speech code. Fill the blanks in the snippet below.",
+    "code": "recognizer = speechsdk.[[drop1]](speech_config=speech_config)\nresult = recognizer.[[drop2]]().get()",
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "SpeechRecognizer",
+          "SearchClient",
+          "DocumentIntelligenceClient",
+          "VectorizedQuery"
+        ],
+        "correctAnswer": "SpeechRecognizer",
+        "explanation": "SpeechRecognizer is used for recognition."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "recognize_once_async",
+          "speak_text_async",
+          "begin_analyze_document",
+          "search"
+        ],
+        "correctAnswer": "recognize_once_async",
+        "explanation": "recognize_once_async performs one-shot recognition."
+      }
+    ],
+    "answer": "SpeechRecognizer, recognize_once_async",
+    "explanation": "The recognizer object performs one-shot speech recognition with recognize_once_async.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 730,
+    "section": "Implement information extraction solutions",
+    "type": "Dropdown choice",
+    "topic": "Search concepts 5",
+    "stem": "Complete the search concepts statement. An Azure AI Search [[drop1]] stores searchable content. An [[drop2]] pulls data from a supported source on a schedule.",
+    "code": null,
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "index",
+          "voice",
+          "model deployment",
+          "avatar"
+        ],
+        "correctAnswer": "index",
+        "explanation": "The index stores searchable content."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "indexer",
+          "prompt shield",
+          "speaker profile",
+          "webhook"
+        ],
+        "correctAnswer": "indexer",
+        "explanation": "An indexer pulls and loads content from a source."
+      }
+    ],
+    "answer": "index, indexer",
+    "explanation": "The index stores content and the indexer imports it.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 731,
+    "section": "Plan and manage an Azure AI solution",
+    "type": "Dropdown choice",
+    "topic": "Authentication basics 6",
+    "stem": "Choose the best term for each blank. To avoid hard-coded secrets in Azure, use [[drop1]]. To grant that identity access to an Azure AI resource, configure [[drop2]].",
+    "code": null,
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "Image generation",
+          "SpeechConfig",
+          "Semantic captions",
+          "DefaultAzureCredential"
+        ],
+        "correctAnswer": "DefaultAzureCredential",
+        "explanation": "DefaultAzureCredential is the Azure Identity entry point for keyless authentication."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "SSML",
+          "Vision Studio",
+          "Top K only",
+          "RBAC"
+        ],
+        "correctAnswer": "RBAC",
+        "explanation": "RBAC controls what the identity can do on the target resource."
+      }
+    ],
+    "answer": "DefaultAzureCredential, RBAC",
+    "explanation": "The first blank is about identity creation and the second is about authorization.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 732,
+    "section": "Implement generative AI and agentic solutions",
+    "type": "Dropdown choice",
+    "topic": "RAG sequence 6",
+    "stem": "Complete the retrieval statement. A grounded answer usually retrieves [[drop1]] from the index and then sends that context to [[drop2]].",
+    "code": null,
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "voice avatars",
+          "private endpoints",
+          "audio speakers",
+          "relevant chunks"
+        ],
+        "correctAnswer": "relevant chunks",
+        "explanation": "RAG retrieves relevant chunks or passages from the index."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "the CSS renderer",
+          "the DNS zone",
+          "the RBAC portal",
+          "the model"
+        ],
+        "correctAnswer": "the model",
+        "explanation": "The retrieved context is supplied to the model for grounded generation."
+      }
+    ],
+    "answer": "relevant chunks, the model",
+    "explanation": "RAG retrieves relevant content and passes it to the model.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 733,
+    "section": "Implement generative AI and agentic solutions",
+    "type": "Dropdown choice",
+    "topic": "Structured output code 6",
+    "stem": "Complete the code to request structured JSON output. Fill the blanks in the snippet below.",
+    "code": "request = {\n    \"[[drop2]]\": {\n        \"type\": \"[[drop1]]\"\n    }\n}",
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "image",
+          "binary",
+          "markdown",
+          "json_object"
+        ],
+        "correctAnswer": "json_object",
+        "explanation": "json_object is the structured output choice in this simplified simulator item."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "voice_name",
+          "indexer_name",
+          "semantic_ranker",
+          "response_format"
+        ],
+        "correctAnswer": "response_format",
+        "explanation": "The request property is response_format in this example."
+      }
+    ],
+    "answer": "json_object, response_format",
+    "explanation": "The request config uses response_format with type json_object.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 734,
+    "section": "Implement computer vision solutions",
+    "type": "Dropdown choice",
+    "topic": "Multimodal inputs 6",
+    "stem": "Complete the multimodal prompt pattern. A multimodal chat message often includes a [[drop1]] item for the user’s question and an [[drop2]] item for the visual input.",
+    "code": null,
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "vector_query",
+          "audio_config",
+          "indexer",
+          "text"
+        ],
+        "correctAnswer": "text",
+        "explanation": "The user question is usually represented as text content."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "rbac_role",
+          "skillset",
+          "voice_profile",
+          "image_url"
+        ],
+        "correctAnswer": "image_url",
+        "explanation": "Visual input is commonly passed via image_url content."
+      }
+    ],
+    "answer": "text, image_url",
+    "explanation": "Multimodal prompts combine text with image input.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 735,
+    "section": "Implement text analysis solutions",
+    "type": "Dropdown choice",
+    "topic": "Speech SDK code 6",
+    "stem": "Complete the Azure Speech code. Fill the blanks in the snippet below.",
+    "code": "recognizer = speechsdk.[[drop1]](speech_config=speech_config)\nresult = recognizer.[[drop2]]().get()",
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "SearchClient",
+          "DocumentIntelligenceClient",
+          "VectorizedQuery",
+          "SpeechRecognizer"
+        ],
+        "correctAnswer": "SpeechRecognizer",
+        "explanation": "SpeechRecognizer is used for recognition."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "speak_text_async",
+          "begin_analyze_document",
+          "search",
+          "recognize_once_async"
+        ],
+        "correctAnswer": "recognize_once_async",
+        "explanation": "recognize_once_async performs one-shot recognition."
+      }
+    ],
+    "answer": "SpeechRecognizer, recognize_once_async",
+    "explanation": "The recognizer object performs one-shot speech recognition with recognize_once_async.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 736,
+    "section": "Implement information extraction solutions",
+    "type": "Dropdown choice",
+    "topic": "Search concepts 6",
+    "stem": "Complete the search concepts statement. An Azure AI Search [[drop1]] stores searchable content. An [[drop2]] pulls data from a supported source on a schedule.",
+    "code": null,
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "voice",
+          "model deployment",
+          "avatar",
+          "index"
+        ],
+        "correctAnswer": "index",
+        "explanation": "The index stores searchable content."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "prompt shield",
+          "speaker profile",
+          "webhook",
+          "indexer"
+        ],
+        "correctAnswer": "indexer",
+        "explanation": "An indexer pulls and loads content from a source."
+      }
+    ],
+    "answer": "index, indexer",
+    "explanation": "The index stores content and the indexer imports it.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 737,
+    "section": "Plan and manage an Azure AI solution",
+    "type": "Dropdown choice",
+    "topic": "Authentication basics 7",
+    "stem": "Choose the best term for each blank. To avoid hard-coded secrets in Azure, use [[drop1]]. To grant that identity access to an Azure AI resource, configure [[drop2]].",
+    "code": null,
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "DefaultAzureCredential",
+          "Image generation",
+          "SpeechConfig",
+          "Semantic captions"
+        ],
+        "correctAnswer": "DefaultAzureCredential",
+        "explanation": "DefaultAzureCredential is the Azure Identity entry point for keyless authentication."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "RBAC",
+          "SSML",
+          "Vision Studio",
+          "Top K only"
+        ],
+        "correctAnswer": "RBAC",
+        "explanation": "RBAC controls what the identity can do on the target resource."
+      }
+    ],
+    "answer": "DefaultAzureCredential, RBAC",
+    "explanation": "The first blank is about identity creation and the second is about authorization.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 738,
+    "section": "Implement generative AI and agentic solutions",
+    "type": "Dropdown choice",
+    "topic": "RAG sequence 7",
+    "stem": "Complete the retrieval statement. A grounded answer usually retrieves [[drop1]] from the index and then sends that context to [[drop2]].",
+    "code": null,
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "relevant chunks",
+          "voice avatars",
+          "private endpoints",
+          "audio speakers"
+        ],
+        "correctAnswer": "relevant chunks",
+        "explanation": "RAG retrieves relevant chunks or passages from the index."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "the model",
+          "the CSS renderer",
+          "the DNS zone",
+          "the RBAC portal"
+        ],
+        "correctAnswer": "the model",
+        "explanation": "The retrieved context is supplied to the model for grounded generation."
+      }
+    ],
+    "answer": "relevant chunks, the model",
+    "explanation": "RAG retrieves relevant content and passes it to the model.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 739,
+    "section": "Implement generative AI and agentic solutions",
+    "type": "Dropdown choice",
+    "topic": "Structured output code 7",
+    "stem": "Complete the code to request structured JSON output. Fill the blanks in the snippet below.",
+    "code": "request = {\n    \"[[drop2]]\": {\n        \"type\": \"[[drop1]]\"\n    }\n}",
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "json_object",
+          "image",
+          "binary",
+          "markdown"
+        ],
+        "correctAnswer": "json_object",
+        "explanation": "json_object is the structured output choice in this simplified simulator item."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "response_format",
+          "voice_name",
+          "indexer_name",
+          "semantic_ranker"
+        ],
+        "correctAnswer": "response_format",
+        "explanation": "The request property is response_format in this example."
+      }
+    ],
+    "answer": "json_object, response_format",
+    "explanation": "The request config uses response_format with type json_object.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 740,
+    "section": "Implement computer vision solutions",
+    "type": "Dropdown choice",
+    "topic": "Multimodal inputs 7",
+    "stem": "Complete the multimodal prompt pattern. A multimodal chat message often includes a [[drop1]] item for the user’s question and an [[drop2]] item for the visual input.",
+    "code": null,
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "text",
+          "vector_query",
+          "audio_config",
+          "indexer"
+        ],
+        "correctAnswer": "text",
+        "explanation": "The user question is usually represented as text content."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "image_url",
+          "rbac_role",
+          "skillset",
+          "voice_profile"
+        ],
+        "correctAnswer": "image_url",
+        "explanation": "Visual input is commonly passed via image_url content."
+      }
+    ],
+    "answer": "text, image_url",
+    "explanation": "Multimodal prompts combine text with image input.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 741,
+    "section": "Implement text analysis solutions",
+    "type": "Dropdown choice",
+    "topic": "Speech SDK code 7",
+    "stem": "Complete the Azure Speech code. Fill the blanks in the snippet below.",
+    "code": "recognizer = speechsdk.[[drop1]](speech_config=speech_config)\nresult = recognizer.[[drop2]]().get()",
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "SpeechRecognizer",
+          "SearchClient",
+          "DocumentIntelligenceClient",
+          "VectorizedQuery"
+        ],
+        "correctAnswer": "SpeechRecognizer",
+        "explanation": "SpeechRecognizer is used for recognition."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "recognize_once_async",
+          "speak_text_async",
+          "begin_analyze_document",
+          "search"
+        ],
+        "correctAnswer": "recognize_once_async",
+        "explanation": "recognize_once_async performs one-shot recognition."
+      }
+    ],
+    "answer": "SpeechRecognizer, recognize_once_async",
+    "explanation": "The recognizer object performs one-shot speech recognition with recognize_once_async.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 742,
+    "section": "Implement information extraction solutions",
+    "type": "Dropdown choice",
+    "topic": "Search concepts 7",
+    "stem": "Complete the search concepts statement. An Azure AI Search [[drop1]] stores searchable content. An [[drop2]] pulls data from a supported source on a schedule.",
+    "code": null,
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "index",
+          "voice",
+          "model deployment",
+          "avatar"
+        ],
+        "correctAnswer": "index",
+        "explanation": "The index stores searchable content."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "indexer",
+          "prompt shield",
+          "speaker profile",
+          "webhook"
+        ],
+        "correctAnswer": "indexer",
+        "explanation": "An indexer pulls and loads content from a source."
+      }
+    ],
+    "answer": "index, indexer",
+    "explanation": "The index stores content and the indexer imports it.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 743,
+    "section": "Plan and manage an Azure AI solution",
+    "type": "Dropdown choice",
+    "topic": "Authentication basics 8",
+    "stem": "Choose the best term for each blank. To avoid hard-coded secrets in Azure, use [[drop1]]. To grant that identity access to an Azure AI resource, configure [[drop2]].",
+    "code": null,
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "Image generation",
+          "SpeechConfig",
+          "Semantic captions",
+          "DefaultAzureCredential"
+        ],
+        "correctAnswer": "DefaultAzureCredential",
+        "explanation": "DefaultAzureCredential is the Azure Identity entry point for keyless authentication."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "SSML",
+          "Vision Studio",
+          "Top K only",
+          "RBAC"
+        ],
+        "correctAnswer": "RBAC",
+        "explanation": "RBAC controls what the identity can do on the target resource."
+      }
+    ],
+    "answer": "DefaultAzureCredential, RBAC",
+    "explanation": "The first blank is about identity creation and the second is about authorization.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 744,
+    "section": "Implement generative AI and agentic solutions",
+    "type": "Dropdown choice",
+    "topic": "RAG sequence 8",
+    "stem": "Complete the retrieval statement. A grounded answer usually retrieves [[drop1]] from the index and then sends that context to [[drop2]].",
+    "code": null,
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "voice avatars",
+          "private endpoints",
+          "audio speakers",
+          "relevant chunks"
+        ],
+        "correctAnswer": "relevant chunks",
+        "explanation": "RAG retrieves relevant chunks or passages from the index."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "the CSS renderer",
+          "the DNS zone",
+          "the RBAC portal",
+          "the model"
+        ],
+        "correctAnswer": "the model",
+        "explanation": "The retrieved context is supplied to the model for grounded generation."
+      }
+    ],
+    "answer": "relevant chunks, the model",
+    "explanation": "RAG retrieves relevant content and passes it to the model.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 745,
+    "section": "Implement generative AI and agentic solutions",
+    "type": "Dropdown choice",
+    "topic": "Structured output code 8",
+    "stem": "Complete the code to request structured JSON output. Fill the blanks in the snippet below.",
+    "code": "request = {\n    \"[[drop2]]\": {\n        \"type\": \"[[drop1]]\"\n    }\n}",
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "image",
+          "binary",
+          "markdown",
+          "json_object"
+        ],
+        "correctAnswer": "json_object",
+        "explanation": "json_object is the structured output choice in this simplified simulator item."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "voice_name",
+          "indexer_name",
+          "semantic_ranker",
+          "response_format"
+        ],
+        "correctAnswer": "response_format",
+        "explanation": "The request property is response_format in this example."
+      }
+    ],
+    "answer": "json_object, response_format",
+    "explanation": "The request config uses response_format with type json_object.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 746,
+    "section": "Implement computer vision solutions",
+    "type": "Dropdown choice",
+    "topic": "Multimodal inputs 8",
+    "stem": "Complete the multimodal prompt pattern. A multimodal chat message often includes a [[drop1]] item for the user’s question and an [[drop2]] item for the visual input.",
+    "code": null,
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "vector_query",
+          "audio_config",
+          "indexer",
+          "text"
+        ],
+        "correctAnswer": "text",
+        "explanation": "The user question is usually represented as text content."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "rbac_role",
+          "skillset",
+          "voice_profile",
+          "image_url"
+        ],
+        "correctAnswer": "image_url",
+        "explanation": "Visual input is commonly passed via image_url content."
+      }
+    ],
+    "answer": "text, image_url",
+    "explanation": "Multimodal prompts combine text with image input.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 747,
+    "section": "Implement text analysis solutions",
+    "type": "Dropdown choice",
+    "topic": "Speech SDK code 8",
+    "stem": "Complete the Azure Speech code. Fill the blanks in the snippet below.",
+    "code": "recognizer = speechsdk.[[drop1]](speech_config=speech_config)\nresult = recognizer.[[drop2]]().get()",
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "SearchClient",
+          "DocumentIntelligenceClient",
+          "VectorizedQuery",
+          "SpeechRecognizer"
+        ],
+        "correctAnswer": "SpeechRecognizer",
+        "explanation": "SpeechRecognizer is used for recognition."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "speak_text_async",
+          "begin_analyze_document",
+          "search",
+          "recognize_once_async"
+        ],
+        "correctAnswer": "recognize_once_async",
+        "explanation": "recognize_once_async performs one-shot recognition."
+      }
+    ],
+    "answer": "SpeechRecognizer, recognize_once_async",
+    "explanation": "The recognizer object performs one-shot speech recognition with recognize_once_async.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
+  },
+  {
+    "number": 748,
+    "section": "Implement information extraction solutions",
+    "type": "Dropdown choice",
+    "topic": "Search concepts 8",
+    "stem": "Complete the search concepts statement. An Azure AI Search [[drop1]] stores searchable content. An [[drop2]] pulls data from a supported source on a schedule.",
+    "code": null,
+    "dropdowns": [
+      {
+        "id": "drop1",
+        "placeholder": "Select",
+        "choices": [
+          "voice",
+          "model deployment",
+          "avatar",
+          "index"
+        ],
+        "correctAnswer": "index",
+        "explanation": "The index stores searchable content."
+      },
+      {
+        "id": "drop2",
+        "placeholder": "Select",
+        "choices": [
+          "prompt shield",
+          "speaker profile",
+          "webhook",
+          "indexer"
+        ],
+        "correctAnswer": "indexer",
+        "explanation": "An indexer pulls and loads content from a source."
+      }
+    ],
+    "answer": "index, indexer",
+    "explanation": "The index stores content and the indexer imports it.",
+    "source": "Original AI-103 practice item aligned to Microsoft Learn skills measured"
   }
 ]

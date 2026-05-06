@@ -1,5 +1,5 @@
 const PASS_SCORE = 700;
-const STORAGE_KEY = "ai103-exam-session-v5";
+const STORAGE_KEY = "ai103-exam-session-v6";
 const MODE_LIMITS = {
   full: 100,
   quick: 50,
@@ -65,19 +65,86 @@ function lettersToIndexes(answer) {
 }
 
 function buildExamQuestion(question) {
-  const correctIndexes = new Set(lettersToIndexes(question.answer));
-  const options = question.options.map((text, index) => ({
-    id: `q${question.number}-o${index}`,
-    text,
-    correct: correctIndexes.has(index),
-  }));
+  const options = (question.options || []).map((text, index) => {
+    const correctIndexes = new Set(lettersToIndexes(question.answer || ""));
+    return {
+      id: `q${question.number}-o${index}`,
+      text,
+      correct: correctIndexes.has(index),
+    };
+  });
 
   return {
     ...question,
     options: shuffle(options),
     selected: [],
+    dropdownSelections: {},
     flagged: false,
   };
+}
+
+function escapeHtml(value) {
+  return value
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;");
+}
+
+function isDropdownQuestion(question) {
+  return question.type.toLowerCase().includes("dropdown");
+}
+
+function questionIsAnswered(question) {
+  if (isDropdownQuestion(question)) {
+    return question.dropdowns.every((item) => Boolean(question.dropdownSelections[item.id]));
+  }
+  return question.selected.length > 0;
+}
+
+function createDropdownSelect(question, dropdown, index, codeMode = false) {
+  const select = document.createElement("select");
+  select.className = codeMode ? "inline-select inline-select-code" : "inline-select";
+  select.setAttribute("aria-label", `Dropdown ${index + 1} for question ${question.number}`);
+  const empty = document.createElement("option");
+  empty.value = "";
+  empty.textContent = dropdown.placeholder || "Select";
+  select.appendChild(empty);
+  dropdown.choices.forEach((choice) => {
+    const option = document.createElement("option");
+    option.value = choice;
+    option.textContent = choice;
+    if (question.dropdownSelections[dropdown.id] === choice) {
+      option.selected = true;
+    }
+    select.appendChild(option);
+  });
+  select.addEventListener("change", () => {
+    question.dropdownSelections[dropdown.id] = select.value;
+    saveSession();
+    updateStatus();
+    renderNav();
+  });
+  return select;
+}
+
+function renderTemplatedText(container, raw, question, codeMode = false) {
+  container.innerHTML = "";
+  const parts = raw.split(/(\[\[drop\d+\]\])/g);
+  let dropdownIndex = 0;
+  parts.forEach((part) => {
+    const match = part.match(/^\[\[(drop\d+)\]\]$/);
+    if (match) {
+      const dropdown = question.dropdowns.find((item) => item.id === match[1]);
+      if (dropdown) {
+        container.appendChild(createDropdownSelect(question, dropdown, dropdownIndex, codeMode));
+        dropdownIndex += 1;
+      }
+      return;
+    }
+    const span = document.createElement("span");
+    span.innerHTML = escapeHtml(part);
+    container.appendChild(span);
+  });
 }
 
 function formatTime(totalSeconds) {
@@ -149,6 +216,9 @@ function createSession() {
 }
 
 function answerIsCorrect(question) {
+  if (isDropdownQuestion(question)) {
+    return question.dropdowns.every((item) => question.dropdownSelections[item.id] === item.correctAnswer);
+  }
   const selected = new Set(question.selected);
   const correct = new Set(question.options.filter((option) => option.correct).map((option) => option.id));
   if (selected.size !== correct.size) return false;
@@ -162,7 +232,7 @@ function renderNav() {
     button.type = "button";
     button.className = "nav-btn";
     if (index === state.currentIndex) button.classList.add("current");
-    if (question.selected.length) button.classList.add("answered");
+    if (questionIsAnswered(question)) button.classList.add("answered");
     if (question.flagged) button.classList.add("flagged");
     button.textContent = String(index + 1);
     button.addEventListener("click", () => {
@@ -174,7 +244,7 @@ function renderNav() {
 }
 
 function updateStatus() {
-  const answered = state.session.questions.filter((question) => question.selected.length).length;
+  const answered = state.session.questions.filter(questionIsAnswered).length;
   const flagged = state.session.questions.filter((question) => question.flagged).length;
   els.answeredLabel.textContent = `${answered} answered`;
   els.flaggedLabel.textContent = `${flagged} flagged`;
@@ -184,23 +254,39 @@ function renderQuestion() {
   const question = state.session.questions[state.currentIndex];
   const total = state.session.questions.length;
   const isMulti = question.type.toLowerCase().includes("multiple");
+  const isDropdown = isDropdownQuestion(question);
   els.sectionLabel.textContent = question.section;
   els.questionCounter.textContent = `Question ${state.currentIndex + 1} of ${total}`;
-  els.questionType.textContent = isMulti ? "Multiple response" : "Single choice";
-  els.questionStem.textContent = question.stem;
+  els.questionType.textContent = isDropdown ? "Dropdown choice" : isMulti ? "Multiple response" : "Single choice";
   els.flagBtn.textContent = question.flagged ? "Unflag" : "Flag";
   els.prevBtn.disabled = state.currentIndex === 0;
   els.nextBtn.disabled = state.currentIndex === total - 1;
 
+  if (isDropdown) {
+    renderTemplatedText(els.questionStem, question.stem, question, false);
+  } else {
+    els.questionStem.textContent = question.stem;
+  }
+
   if (question.code) {
     els.codeBlock.classList.remove("is-hidden");
-    els.codeBlock.querySelector("code").textContent = question.code;
+    const codeNode = els.codeBlock.querySelector("code");
+    if (isDropdown) {
+      renderTemplatedText(codeNode, question.code, question, true);
+    } else {
+      codeNode.textContent = question.code;
+    }
   } else {
     els.codeBlock.classList.add("is-hidden");
     els.codeBlock.querySelector("code").textContent = "";
   }
 
   els.optionsForm.innerHTML = "";
+  if (isDropdown) {
+    updateStatus();
+    renderNav();
+    return;
+  }
   question.options.forEach((option, index) => {
     const label = document.createElement("label");
     label.className = "option";
@@ -303,7 +389,9 @@ function renderResults() {
   els.reviewList.innerHTML = reviewItems.length
     ? reviewItems
         .map(({ question, index }) => {
-          const correctOptions = question.options.filter((option) => option.correct).map((option) => option.text).join("; ");
+          const correctOptions = isDropdownQuestion(question)
+            ? question.dropdowns.map((item) => `${item.id}: ${item.correctAnswer}`).join("; ")
+            : question.options.filter((option) => option.correct).map((option) => option.text).join("; ");
           return `
             <div class="review-item">
               <strong>Question ${index + 1}: ${answerIsCorrect(question) ? "Flagged" : "Incorrect"}</strong>
@@ -368,7 +456,7 @@ els.flagBtn.addEventListener("click", () => {
 });
 
 els.finishBtn.addEventListener("click", () => {
-  const unanswered = state.session.questions.filter((question) => !question.selected.length).length;
+  const unanswered = state.session.questions.filter((question) => !questionIsAnswered(question)).length;
   const message = unanswered
     ? `You still have ${unanswered} unanswered question(s). Finish and score now?`
     : "Finish and score this exam?";
